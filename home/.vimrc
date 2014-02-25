@@ -1,141 +1,157 @@
-" BASIC
-set nocompatible " No vi compatility, this first because it resets some options
-let mapleader=" " " Mapleader
-filetype off
-set encoding=utf-8
-set history=100  " Keep more history, default is 20
+execute pathogen#infect()
 
-set rtp+=~/.vim/bundle/neobundle.vim
-call neobundle#rc(expand('~/.vim/bundle/'))
+set nu                  " Enable line numbers.
+set ic                  " Case-insensitive searches.
+set smartcase           " Make searches case-sensitive if the search contains an upper-case character.
+set noerrorbells        " Disable error bells.
+set foldmethod=marker
+set showcmd             " Show commands as they're typed.
+set esckeys             " Allow cursor keys in insert mode.
+set nohlsearch          " Disable search result highlighting.    
+set noinsertmode        " Don't start vim in insert mode.
+set magic               " Enable extended regexes.
+set report=0            " Show all changes.
+set ruler               " Show the cursor position.
+set shortmess=I         " Don't show the intro message when starting vim.
+set showmode            " Show the current mode.
+set nostartofline       " Don't jump to the start of the line when moving around.
+set title               " Show the filename in the window titlebar.
+set wildmenu            " When tabbing through command possibilities, all commands are listed.
+set wildchar=<TAB>      " Character for CLI expansion (TAB-completion).
+"set wildmode=list:longest " Behave like BASH tab-completion.
+set expandtab           " Expand tabs to spaces.
+set tabstop=2           " Hitting the tab key results in 2 spaces.
+set shiftwidth=2        " The # of spaces for each step of [auto-]indenting.
+set backspace=indent,eol,start  " Make backspaces delete across auto-indents, EOLs and the beginning of lines
+set matchpairs+=<:>     " Allow % to jump between angle brackets too.
+set nopaste
+set autoindent          " Preserve current indent on new lines
+set showtabline=2       " Always show the tab line at the top of the screen.
+set history=100         " The number of commands and search patterns to remember.
+set scrolloff=5         " Start scrolling through the window when the cursor is X lines above/below the top/bottom of the buffer.
+set sidescrolloff=5     " Same as above, but for horizontal motion.
+set whichwrap=h,l
+set diffopt+=iwhite     " Ignore whitespace in vimdiff.
+set pastetoggle=<F2>    " Use <F2> to toggle paste/nopaste in insert-mode
+set tabpagemax=50       " Allow 50 tabs.
+set ls=2                " Always show the filename.
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'gcmt/wildfire.vim'
-NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'scrooloose/syntastic'
-NeoBundle 'teoljungberg/vim-grep'
-NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tpope/vim-fugitive'
-NeoBundle 'tpope/vim-surround'
-NeoBundle 'tpope/vim-unimpaired'
-NeoBundle 'tpope/vim-dispatch'
-NeoBundle 'tpope/vim-commentary'
-NeoBundle 'wincent/Command-T', {
-  \'build' : {
-    \'mac' : 'ruby ruby/command-t/extconf.rb && make -f ruby/command-t/Makefile',
-    \'linux' : 'ruby ruby/command-t/extconf.rb && make -f ruby/command-t/Makefile' 
-  \} 
-\}
-NeoBundle 'derekwyatt/vim-scala'
-NeoBundle 'jnwhiteh/vim-golang'
-NeoBundle 'kchmck/vim-coffee-script'
-NeoBundle 'pangloss/vim-javascript'
-NeoBundle 'vim-ruby/vim-ruby'
-NeoBundle 'vim-scripts/VimClojure'
-NeoBundle 'tpope/vim-liquid'
-NeoBundle 'tpope/vim-markdown'
-NeoBundle 'tpope/vim-rails'
-NeoBundle 'altercation/vim-colors-solarized'
+" Configure % to jump between if/elsif/end , and other things.
+runtime macros/matchit.vim
 
-filetype plugin indent on " Enable after Vundle loaded, #dunnolol
+" Indent/outdent to nearest tabstop
+set shiftround
 
-set tags=.git/tags " Use commit hook tags, see ~/.git_template
+if version >= 600
+  filetype on
+  filetype plugin on
+  filetype indent on
+endif
 
-set list " Highlight trailings, stolen from @teoljungberg
-set listchars=tab:>-,trail:.,extends:>,precedes:<
+" Set syntax highlighting options.
+"set t_Co=256            " Let's use 256 colours.
+syntax on
+colorscheme peaksea
 
-" Allow editing crontabs http://vim.wikia.com/wiki/Editing_crontab
-set backupskip=/tmp/*,/private/tmp/* "
-set undodir=~/.vim/undo
-set noswapfile
-set nobackup
+" Custom HTML indentation
+let g:html_indent_inctags = "li"
 
-syntax enable
-colorscheme solarized
-set background=dark " Set dark solarized theme
-set t_Co=256  " 2000s plz
-set textwidth=80  " Switch line at 80 characters
-set scrolloff=5   " Keep some distance to the bottom"
-set showmatch         " Show matching of: () [] {}
-set ignorecase        " Required for smartcase to work
-set smartcase         " Case sensitive when uppercase is present
-set incsearch         " Search as you type
-set smartindent       " Be smart about indentation
-set expandtab         " Tabs are spaces
-set smarttab
+if &diff
+  " ViMDiff settings.
+endif
 
-set tabstop=2 " Tabs are 2 spaces
-set backspace=2 " Backspace deletes 2 spaces
-set shiftwidth=2 " Even if there are tabs, preview as 2 spaces
-
-map <C-J> <C-W>j
-map <C-K> <C-W>k
-map <C-L> <C-W>l
-map <C-H> <C-W>h
-imap jk <esc>
-map <leader>d :bd<CR>
-
-" Sane behavior on long lines
-nmap k gk
+" Set folding options.
+vmap <space> zf
+nmap <space> zo
+nmap f zc
 nmap j gj
-noremap H ^
-noremap L $
+nmap k gk
+highlight Folded ctermfg=yellow ctermbg=none
 
-map <leader>gs :Gstatus<CR>
-map <leader>gc :Gcommit<CR>
+" Map '<' to switch to the previous tab, and '>' to switch to the next tab.
+" Tabpage documentation: http://vimdoc.sourceforge.net/htmldoc/tabpage.html
+noremap < gT
+noremap > gt
 
-" Rename current file, thanks Gary Bernhardt via Ben Orenstein
-function! RenameFile()
-  let old_name = expand('%')
-  let new_name = input('New file name: ', expand('%'), 'file')
-  if new_name != '' && new_name != old_name
-    exec ':saveas ' . new_name
-    exec ':silent !rm ' . old_name
-    redraw!
-  endif
-endfunction
-map <leader>r :call RenameFile()<cr>
+" Map '#' to comment out the current line, then go down one line.
+" If the first character is a space, the space will be removed. Eg:
+"   "not indented"  -->   "#not indented"
+"   "  indented"    -->   "# indented"
+"map # :s/^/#/<CR>j
+nnoremap # :s/^ \?/#/<CR>j
 
-" Sane default tab-key, replaces Supertab.
-function! InsertTabWrapper()
-  let col = col('.') - 1
-  if !col || getline('.')[col - 1] !~ '\k'
-    return "\<tab>"
-  else
-    return "\<c-p>"
-  endif
-endfunction
-imap <tab>   <c-r>=InsertTabWrapper()<cr>
-imap <s-tab> <c-n>
+" Map '`' (backtick) to remove the first character from the current line, then go down one line.
+" If the second character is a space, a space will be added to the beginning
+" of the line. Eg:
+"   "#not indented"   -->   "not indented"
+"   "# indented"      -->   "  indented"
+"map ` :s/^.//<CR>j
+nnoremap ` :s/^#\( \)\?/\1\1/<CR>j
 
-autocmd BufNewFile,BufRead *.md,*.markdown set spell
+" Map ';' to switch the position of the current line and the one below it.
+noremap ; ddpk0
 
-autocmd BufNewFile,BufRead *_test.rb compiler rubyunit
-autocmd BufNewFile,BufRead *_test.rb set makeprg=bundle\ exec\ testrb\ %
+" Convert tabs to two spaces.
+noremap :tabstowhitespace :%s/\t/  /g
 
-autocmd FileType go compiler go
-autocmd BufWrite *.go :Fmt
-autocmd FileType go set nolist " Go fmt will use tabs
+" Remove trailing spaces.
+noremap :trail :s/\s\+$//
 
-map <C-E> :Make<CR>
+" Map CTRL+@ to ESC.
+noremap! <C-@> <esc>l
 
-" Force vim to use login shell, ie. for chruby to work right.
-" https://github.com/postmodern/chruby/wiki/Vim
-set shell=$SHELL\ -l
-map <leader>n :NERDTreeToggle<CR>
-map <C-t> :CommandT<CR>
-map <C-g> :CommandTBuffer<CR>
-map <C-7> :CommandTTag<CR>
-let g:CommandTAcceptSelectionSplitMap='<C-x>'
-let g:CommandTMaxHeight=20
+" Map CTRL+n to CTRL+w because the former is easier to type.
+" This makes it easier to switch viewports.
+noremap <C-n> <C-w>
 
-set wildignore+=.git/**,public/assets/**,vendor/**,log/**,tmp/**,Cellar/**,app/assets/images/**,_site/**,home/.vim/bundle/**,pkg/**,**/.gitkeep,**/.DS_Store,**/*.netrw*,node_modules/*
+" Map CTRL+SHIFT+[JK] scroll the buffer by 3 lines in the respective direction.
+nnoremap <C-J> 3<C-e>
+nnoremap <C-K> 3<C-y>
 
-fun! StripTrailingWhitespaces()
-  let l = line(".")
-  let c = col(".")
-  %s/\s\+$//e
-  call cursor(l, c)
-endfun
-autocmd FileType c,cpp,go,scala,markdown,clojure,javascript,ruby,python autocmd BufWritePre <buffer> :call StripTrailingWhitespaces()
+" Map :ind to indent by 2 spaces.
+map :ind :s/^/  /<CR>
 
-match Error /\%81v.\+/
+" Macros to fold blocks. {{{
+" Map @a to add 3 open-braces to the end of the current line.
+nnoremap @a $a # {{{<esc>0w
+
+" Map @b to add 3 close-braces to the end of the current line.
+nnoremap @b $a # }}}<esc>0w
+
+" Map @c to add code folding to the current block. Note that the cursor must
+" be on the line that marks the beginning of the block.
+"nnoremap @c $a # {{{<esc>0w%$a # }}}<esc>0w
+" End macros to fold blocks. }}}
+
+" Map @q to convert double-quotes to single-quotes on the current line.
+noremap @q :s/"/'/g<CR>
+
+" Map @Q to convert single-quotes to double-quotes on the current line.
+noremap @Q :s/'/"/g<CR>
+
+map :ruby :set filetype=ruby
+map :eruby :set filetype=eruby
+
+" Map :Rf and :Norf to add and remove ", :focus => true" to RSpec examples and example groups.
+"com! Rf :s/\([^\w]\) do\( \?\)/\1, :focus => true do\2/
+"com! Rf :s/\([^\w]['")]\) do\( \?\)/\1, :focus => true do\2/
+com! Rf :s/\(['")]\) do\( \?\)/\1, :focus => true do\2/
+com! Norf :s/, :focus => true//
+
+" Map :Rsp to remove extra whitespace after the first non-whitespace characters on a line.
+com! Rsp :s/^\(\s*\S\+\)\s\+/\1 /
+
+" Map :VSP to ":botright vsplit" to make it faster to create a vertical on the right.
+com! -nargs=1 -complete=file VSP :botright vsplit <args>
+
+" Redefine O because sometimes ViM isn't fast enough, and enters input mode
+" on the line that O was called on, rather than on the line above.
+"nmap O 0i<CR><esc>k0
+
+" Open multiple tabs at once. Usage:
+"   :AddTabs foo/*
+com! -nargs=+ -complete=file AddTabs tabnew|exec "args" <q-args>|tab ball
+
+" add jbuilder syntax highlighting
+au BufNewFile,BufRead *.json.jbuilder set ft=ruby
+
