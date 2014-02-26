@@ -7,8 +7,11 @@ if [ -d /usr/local/bin ]; then
 fi
 
 # rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+which rbenv >/dev/null
+if [ "x$?" = "x0" ]; then
+  export PATH="$HOME/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 # NPM
 if [ -d /usr/local/share/npm/bin ]; then
