@@ -19,14 +19,21 @@ alias cgrep='cls | grep '
 alias gdu="grep -v -e '^..K' -e '^...K' -e '^..M' -e '^.\..M' -e '^0'"
 alias less='/usr/bin/less -i'
 alias loc='locate'
-alias p='/bin/ps auxf'
-alias pl='/bin/ps auxf | less'
 alias su='/bin/su -'
 alias v='/usr/bin/view'
 alias sv='/usr/bin/sudo /usr/bin/vim'
 alias sl='cd ~/src/shelflife'
 alias slm='cd ~/src/shelflife-misc'
 alias vi='vi -p'
+
+
+if [ "`uname`" = 'Darwin' ]; then
+  alias p='/bin/ps aux'
+  alias pl='/bin/ps aux | less'
+else
+  alias p='/bin/ps auxf'
+  alias pl='/bin/ps auxf | less'
+fi
 
 # APT
 # These only work on Linux.
@@ -92,19 +99,15 @@ if [ "`uname`" == 'Linux' ]; then
 fi
 
 # Show network connections.
-function nst () {
-  platform=`uname`
-
-  if [[ "$platform" == 'Darwin' ]]; then
-    sudo netstat -taun
-  else
-    sudo netstat -taunp
-  fi
-}
+if [ "`uname`" = 'Darwin' ]; then
+  alias nst='sudo netstat -taun'
+else
+  alias nst='sudo netstat -taunp'
+fi
 
 # Swap data between tmux's buffer and the OS' clipboard.
 # This only works on Mac OS X.
-if [ "`uname`" == 'Darwin' ]; then
+if [ "`uname`" = 'Darwin' ]; then
   alias tmc='tmux save-buffer - | pbcopy'
   alias tmp='tmux set-buffer "$(pbpaste)"'
 fi
