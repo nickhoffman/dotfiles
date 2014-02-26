@@ -13,14 +13,14 @@ export EDITOR=/usr/bin/vim
 # Thanks, @teoljungberg
 stty -ixon
 
-export TERM=screen-256color
+#export TERM=screen-256color
 
 # Plenty big history for searching backwards and doing analysis
 export HISTFILESIZE=100000
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color|konsole-256color|screen-256color) color_prompt=yes;;
+    xterm-color|xterm-256color|konsole-256color|screen-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
