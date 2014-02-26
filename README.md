@@ -7,6 +7,7 @@ Dotfiles I have used and tweaked for the past couple of years. They're designed 
 <table>
   <tr>
     <th>Hardware</th>
+    <th>OS</th>
     <th>Terminal</th>
     <th>Shell</th>
     <th>Editor</th>
@@ -15,6 +16,7 @@ Dotfiles I have used and tweaked for the past couple of years. They're designed 
   </tr>
   <tr>
     <td>Lenovo T430s</td>
+    <td>Kubuntu</td>
     <td>Konsole</td>
     <td>Bash</td>
     <td>ViM</td>
@@ -23,6 +25,7 @@ Dotfiles I have used and tweaked for the past couple of years. They're designed 
   </tr>
   <tr>
     <td>15" MacBook Pro</td>
+    <td>Mac OS X</td>
     <td>iTerm2</td>
     <td>Bash</td>
     <td>ViM</td>
