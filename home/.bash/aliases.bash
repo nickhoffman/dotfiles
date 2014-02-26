@@ -6,7 +6,13 @@ alias ...='cd ../..'
 alias ....='cd ../../../'
 alias rm='/bin/rm -i'
 alias cp='/bin/cp -i'
-alias ll='ls -lFG'
+
+if [ "`uname`" = 'Darwin' ]; then
+  alias ll='ls -lFG'
+else
+  alias ll='ls -lF --color=auto'
+fi
+
 alias llh='ll -h'
 alias lla='ll -a'
 alias cls='/usr/bin/clear && ll'
