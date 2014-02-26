@@ -1,6 +1,6 @@
 [user]
-	name = Nick Hoffman
-	email = nick@deadorange.com
+  name = Nick Hoffman
+  email = nick@deadorange.com
 [color]
   branch = auto
   diff = auto
@@ -25,5 +25,5 @@
 [init]
   templatedir = ~/.git_template
 [filter "media"]
-	clean = git-media-clean %f
-	smudge = git-media-smudge %f
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
