@@ -1,6 +1,6 @@
 [user]
-  name = Simon Eskildsen
-  email = sirup@sirupsen.com
+	name = Nick Hoffman
+	email = nick@deadorange.com
 [color]
   branch = auto
   diff = auto
@@ -24,3 +24,6 @@
   helper = osxkeychain
 [init]
   templatedir = ~/.git_template
+[filter "media"]
+	clean = git-media-clean %f
+	smudge = git-media-smudge %f
