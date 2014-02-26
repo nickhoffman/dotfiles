@@ -1,13 +1,8 @@
-# Sirupsen's Dotfiles
+## Nick Hoffman's Dotfiles
 
-Dotfiles I have used and tweaked for the past couple of years. They're simple
-and optimized for a 13" laptop.
+Dotfiles I have used and tweaked for the past couple of years. They're designed to work on GNU/Linux, and am slowly modifying them to work on Mac OS X, too.
 
-They go hand in hand with my [`babushka`
-deps](https://github.com/sirupsen/babushka-deps) which provision my development
-machine.
-
-# Setup
+## Setup
 
 <table>
   <tr>
@@ -17,35 +12,28 @@ machine.
     <th>Editor</th>
     <th>Version control</th>
     <th>Multiplexer</th>
-    <th>Font</th>
   </tr>
   <tr>
-    <td>Retina Macbook 13"</td>
-    <td>Terminal</td>
-    <td>bash</td>
-    <td>vim</td>
-    <td>git</td>
+    <td>Lenovo T430s</td>
+    <td>Konsole</td>
+    <td>Bash</td>
+    <td>ViM</td>
+    <td>Git</td>
     <td>tmux</td>
-    <td><a href="http://www.levien.com/type/myfonts/inconsolata.html">Inconsolata</a> 14pt</td>
+  </tr>
+  <tr>
+    <td>15" MacBook Pro</td>
+    <td>iTerm2</td>
+    <td>Bash</td>
+    <td>ViM</td>
+    <td>Git</td>
+    <td>tmux</td>
   </tr>
 </table>
 
-# Installing
+## Install
 
-I use `linker.sh` to clone and symlink my dotfiles across machines. Invoke it to
-symlink the dotfiles. It will prompt to override if the files already exist. Run
-`:NeoBundleInstall` in Vim to clone down my Vim plugins.
+1. Clone this repository.
 
-# Screenshots
+2. Run `linker.sh` to clone and symlink to the dotfiles. You'll be prompted to overwrite any existing files.
 
-Clean iTerm 2 in `vim`:
-
-![](http://i.imgur.com/dCCtqGy.png)
-
-Blank `bash`, only shows current dir, about as complicated the prompt gets.
-
-![](http://i.imgur.com/yLrooPJ.png)
-
-iTerm 2 fullscreen `tmux` hacking session:
-
-![](http://i.imgur.com/Xfr6tbI.png)
