@@ -51,6 +51,7 @@ endif
 " Set syntax highlighting options.
 "set t_Co=256            " Let's use 256 colours.
 syntax on
+set background=dark
 colorscheme peaksea
 
 " Custom HTML indentation
