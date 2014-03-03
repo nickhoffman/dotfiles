@@ -36,3 +36,10 @@ if [[ -d /usr/local/opt/coreutils/libexec/gnubin ]]; then
 fi
 
 export VAGRANT_DEFAULT_PROVIDER="vmware_fusion" 
+
+# For tmux's PowerLine
+# Is this needed? /usr/local/lib/python2.7/
+if [ "`uname`" = 'Darwin' ]; then
+  export PATH="$PATH:/usr/local/lib/python2.7/"
+fi
+
