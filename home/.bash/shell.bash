@@ -20,7 +20,7 @@ export HISTFILESIZE=100000
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color|xterm-256color|konsole-256color|screen-256color) color_prompt=yes;;
+    xterm-color|xterm-256color|konsole-256color|screen-256color) color_prompt='yes';;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -39,14 +39,14 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-  # Terminal colours (after installing GNU coreutils)
-  NM="\[\033[0;38m\]" #means no background and white lines
-  HI="\[\033[0;37m\]" #change this for letter colors
-  HII="\[\033[0;31m\]" #change this for letter colors
-  SI="\[\033[0;33m\]" #this is for the current directory
-  IN="\[\033[0m\]"
+# Terminal colours (after installing GNU coreutils)
+NM="\[\033[0;38m\]" #means no background and white lines
+HI="\[\033[0;37m\]" #change this for letter colors
+HII="\[\033[0;31m\]" #change this for letter colors
+SI="\[\033[0;33m\]" #this is for the current directory
+IN="\[\033[0m\]"
 
-if [ "$color_prompt" = yes ]; then
+if [ "$color_prompt" = 'yes' ]; then
   export PS1="[$NM$HI\u@$HII\h $HI\w${NM}$HII\$(__git_ps1)$HI] $IN"
 else
   export PS1="[\u@\h \w] "
