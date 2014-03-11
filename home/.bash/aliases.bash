@@ -131,19 +131,34 @@ function rt {
 }
 
 # Expose a port on Vagrant to the outside world.
-function expose_vagrant {
-  port="$1"
-  vagrant_ip='192.168.72.128'
-  local_ip=`ifconfig en0 | grep '^\s*inet ' | cut -d ' ' -f2`
+# This only works on Mac OS X.
+if [ "`uname`" = 'Darwin' ]; then
+  function expose_vagrant {
+    port="$1"
+    vagrant_ip='192.168.72.128'
+    local_ip=`ifconfig en0 | grep '^\s*inet ' | cut -d ' ' -f2`
 
-  if [ -z "$port" ]; then
-    echo 'Which port do you want to foward?'
-    return 1
-  fi
+    if [ -z "$port" ]; then
+      echo 'Which port do you want to foward?'
+      return 1
+    fi
 
-  echo "Forwarding $local_ip:$port to $vagrant_ip:$port"
-  echo
+    echo "Forwarding $local_ip:$port to $vagrant_ip:$port"
+    echo
 
-  ssh -v -L $local_ip:$port:$vagrant_ip:$port -N localhost
-}
+    ssh -v -L $local_ip:$port:$vagrant_ip:$port -N localhost
+  }
+fi
+
+# Update Vagrant.
+# This only works on Mac OS X.
+if [ "`uname`" = 'Darwin' ]; then
+  function update_vagrant {
+    cd ~/src/vagrant/ \
+      && git pull origin master \
+      && vagrant bundle \
+      && vagrant up \
+      && vagrant provision
+  }
+fi
 
