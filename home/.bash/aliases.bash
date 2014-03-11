@@ -26,11 +26,11 @@ alias gdu="grep -v -e '^..K' -e '^...K' -e '^..M' -e '^.\..M' -e '^0'"
 alias less='/usr/bin/less -i'
 alias loc='locate'
 alias su='/bin/su -'
-alias v='/usr/bin/view'
-alias sv='/usr/bin/sudo /usr/bin/vim'
+alias v='view'
+alias sv='/usr/bin/sudo vim'
 alias sl='cd ~/src/shelflife'
 alias slm='cd ~/src/shelflife-misc'
-alias vi='vi -p'
+alias vi='vim -p'
 
 
 if [ "`uname`" = 'Darwin' ]; then
