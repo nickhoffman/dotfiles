@@ -76,7 +76,7 @@ alias yak='mux yak'
 alias vu='vagrant up'
 alias vsu='vagrant suspend'
 alias vr='vagrant resume'
-alias vs='vagrant ssh'
+alias vs='cd ~/src/vagrant/ && vagrant ssh'
 
 # Miscellaneous
 alias pg='pgrep -fl'
