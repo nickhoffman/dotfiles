@@ -70,6 +70,7 @@ alias be='bundle exec'
 
 # tmux
 alias tmux='tmux -2'
+alias tms='tmux new-session -s'
 alias yak='mux yak'
 
 # Vagrant
