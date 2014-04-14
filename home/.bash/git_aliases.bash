@@ -35,6 +35,7 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gb   branch
   __git_shortcut gba  gb -a
   __git_shortcut gco  checkout
+  __git_shortcut gcom checkout master
   __git_shortcut gp   push
   __git_shortcut gfa  fetch --all --prune
   __git_shortcut gfo  fetch --prune origin
