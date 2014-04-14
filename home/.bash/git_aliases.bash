@@ -33,7 +33,7 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gl   log --name-status
   __git_shortcut gl1  log --oneline
   __git_shortcut gb   branch
-  __git_shortcut gba  gb -a
+  __git_shortcut gba  branch -a
   __git_shortcut gco  checkout
   __git_shortcut gcom checkout master
   __git_shortcut gp   push
