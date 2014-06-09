@@ -1,4 +1,4 @@
-# ~/.tmuxinator/eu.yml
+# ~/.tmuxinator/core.yml
 
 name: core
 root: ~/src/shopify/
