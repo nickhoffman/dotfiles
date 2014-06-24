@@ -31,7 +31,7 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gdh  diff HEAD HEAD^
   __git_shortcut gc   commit
   __git_shortcut gl   log --name-status
-  __git_shortcut gl1  log --oneline
+  __git_shortcut gl1  log --pretty=tformat:"'%C(yellow)%h%Creset%x09%an%x09%ad%x09%s'" --date=short
   __git_shortcut gb   branch
   __git_shortcut gba  branch -a
   __git_shortcut gco  checkout
