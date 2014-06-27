@@ -25,21 +25,21 @@ alias gl1mh='gl1 master..HEAD'
 
 type __git_shortcut >/dev/null 2>&1
 if [ "x$?" = "x0" ]; then
-  __git_shortcut ga   add
-  __git_shortcut gd   diff
-  __git_shortcut gdc  diff --cached
-  __git_shortcut gdh  diff HEAD^ HEAD
-  __git_shortcut gc   commit
-  __git_shortcut gl   log --name-status
-  __git_shortcut gl1  log --pretty=tformat:"'%C(yellow)%h%Creset%x09%an%x09%ad%x09%s'" --date=short
+  __git_shortcut ga     add
+  __git_shortcut gd     diff
+  __git_shortcut gdc    diff --cached
+  __git_shortcut gdh    diff HEAD^ HEAD
+  __git_shortcut gc     commit
+  __git_shortcut gl     log --name-status
+  __git_shortcut gl1    log --pretty=tformat:"'%C(yellow)%h%Creset%x09%an%x09%ad%x09%s'" --date=short
   __git_shortcut gl1mh  log --oneline master..HEAD
-  __git_shortcut gb   branch
-  __git_shortcut gba  branch -a
-  __git_shortcut gco  checkout
-  __git_shortcut gcom checkout master
-  __git_shortcut grm  rebase master
-  __git_shortcut gp   push
-  __git_shortcut gfa  fetch --all --prune
-  __git_shortcut gfo  fetch --prune origin
-  __git_shortcut gsa  stash apply
+  __git_shortcut gb     branch
+  __git_shortcut gba    branch -a
+  __git_shortcut gco    checkout
+  __git_shortcut gcom   checkout master
+  __git_shortcut grm    rebase master
+  __git_shortcut gp     push
+  __git_shortcut gfa    fetch --all --prune
+  __git_shortcut gfo    fetch --prune origin
+  __git_shortcut gsa    stash apply
 fi
