@@ -28,7 +28,7 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut ga   add
   __git_shortcut gd   diff
   __git_shortcut gdc  diff --cached
-  __git_shortcut gdh  diff HEAD HEAD^
+  __git_shortcut gdh  diff HEAD^ HEAD
   __git_shortcut gc   commit
   __git_shortcut gl   log --name-status
   __git_shortcut gl1  log --pretty=tformat:"'%C(yellow)%h%Creset%x09%an%x09%ad%x09%s'" --date=short
