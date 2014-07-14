@@ -43,4 +43,5 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gfa    fetch --all --prune
   __git_shortcut gfo    fetch --prune origin
   __git_shortcut gsa    stash apply
+  __git_shortcut grc    rebase --continue
 fi
