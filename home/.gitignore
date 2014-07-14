@@ -4,3 +4,4 @@
 *.swp
 *.swo
 db/dumps/
+vendor/bundle/
