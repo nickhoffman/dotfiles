@@ -20,7 +20,6 @@ __git_shortcut () {
 }
 
 alias git='git --no-pager'
-alias gl1mh='gl1 master..HEAD'
 
 type __git_shortcut >/dev/null 2>&1
 if [ "x$?" = "x0" ]; then
