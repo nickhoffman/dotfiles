@@ -20,11 +20,11 @@ __git_shortcut () {
 }
 
 alias git='git --no-pager'
-alias gs='git status'
 alias gl1mh='gl1 master..HEAD'
 
 type __git_shortcut >/dev/null 2>&1
 if [ "x$?" = "x0" ]; then
+  __git_shortcut gs     status
   __git_shortcut ga     add
   __git_shortcut gd     diff
   __git_shortcut gdc    diff --cached
