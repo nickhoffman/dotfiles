@@ -23,5 +23,6 @@ windows:
   - test:
   - console:
   - server:
-  - foreman:
+  - sidekiq:
+  - mysql:
 
