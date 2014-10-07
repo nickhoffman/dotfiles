@@ -127,7 +127,7 @@ function rt {
   elif grep -q "spring-commands-testunit" Gemfile; then
     bundle exec spring testunit $@
   else
-    bundle exec ruby -Itest $1
+    bundle exec ruby -Itest $@
   fi
 }
 
