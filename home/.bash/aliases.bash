@@ -176,7 +176,6 @@ if [ "`uname`" = 'Darwin' ]; then
   function update_vagrant {
     cd ~/src/vagrant/ \
       && git pull origin master \
-      && vagrant bundle \
       && vagrant up \
       && vagrant provision
   }
