@@ -157,3 +157,13 @@ com! -nargs=+ -complete=file AddTabs tabnew|exec "args" <q-args>|tab ball
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
+" Load CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Configure CtrlP
+" Disable opening files in a new buffer ("e").
+" Default to opening files in a new tab ("t").
+let g:ctrlp_prompt_mappings = {
+    \ 'AcceptSelection("e")': [],
+    \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
+    \ }
