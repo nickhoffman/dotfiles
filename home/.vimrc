@@ -157,6 +157,9 @@ com! -nargs=+ -complete=file AddTabs tabnew|exec "args" <q-args>|tab ball
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
+" Reformat JSON.
+map <leader>jt :%!python -m json.tool<CR>
+
 " Load CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
