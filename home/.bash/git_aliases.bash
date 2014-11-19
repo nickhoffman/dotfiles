@@ -44,3 +44,5 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gsa    stash apply
   __git_shortcut grc    rebase --continue
 fi
+
+alias gfop='gfo && git pull'
