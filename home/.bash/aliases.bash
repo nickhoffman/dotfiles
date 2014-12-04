@@ -131,6 +131,11 @@ function rt {
   fi
 }
 
+# Run tests that contain "focus" in their name.
+function rtf {
+  rt $@ -n /focus/
+}
+
 # Expose a port on Vagrant to the outside world.
 # This only works on Mac OS X.
 if [ "`uname`" = 'Darwin' ]; then
