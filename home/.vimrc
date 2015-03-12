@@ -93,6 +93,9 @@ nnoremap ` :s/^#\( \)\?/\1\1/<CR>j
 " Map ';' to switch the position of the current line and the one below it.
 noremap ; ddpk0
 
+noremap - /<<<<<<CR>
+noremap _ />>>>><CR>
+
 " Convert tabs to two spaces.
 noremap :tabstowhitespace :%s/\t/  /g
 
