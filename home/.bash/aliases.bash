@@ -80,6 +80,9 @@ alias vsu='vagrant suspend'
 alias vr='vagrant resume'
 alias vs='cd ~/src/vagrant/ && vagrant ssh'
 
+# Shopify
+alias hpc='script/heroku_production run rails console'
+
 # Miscellaneous
 alias pg='pgrep -fl'
 alias showcpu='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 3'
