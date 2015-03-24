@@ -67,6 +67,7 @@ alias sc='script/console'
 alias migration_date='date +"%Y%m%d%H%M%S"'
 alias bi='bundle install'
 alias be='bundle exec'
+alias berc='be rails console'
 
 # tmux
 alias tmux='tmux -2'
