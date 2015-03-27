@@ -47,3 +47,7 @@ if [ "x$?" = "x0" ]; then
 fi
 
 alias gfop='gfo && git pull'
+
+function gcmput {
+  (set -x; gc -m "put this in $@")
+}
