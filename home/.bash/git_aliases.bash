@@ -51,3 +51,7 @@ alias gfop='gfo && git pull'
 function gcmput {
   (set -x; gc -m "put this in $@")
 }
+
+function gcobt {
+  gcob $1 -t origin/$1
+}
