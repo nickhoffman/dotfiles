@@ -59,7 +59,7 @@ if [ "`uname`" == 'Linux' ]; then
   alias d='dpkg'
 fi
 
-# Ruby
+# Development
 alias ri='ri -T'
 alias spec='spec -c'
 alias ss='script/server'
