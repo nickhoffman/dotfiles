@@ -68,6 +68,7 @@ alias migration_date='date +"%Y%m%d%H%M%S"'
 alias bi='bundle install'
 alias be='bundle exec'
 alias berc='be rails console'
+alias ura='gfop && bundle install && bundle exec rake db:migrate db:test:prepare'
 
 # tmux
 alias tmux='tmux -2'
