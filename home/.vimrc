@@ -167,6 +167,29 @@ map <leader>jt :%!python -m json.tool<CR>
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Configure CtrlP
+
+" Ctrl-O opens CtrlP for the current word.
+map <C-o> <C-P><C-\>w
+
+" Persist the cache between ViM sessions.
+let g:ctrlp_clear_cache_on_exit = 0
+
+" Specify the cache directory.
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+
+let g:ctrlp_user_command = 'ag %s -i --nocolor --nogroup --hidden
+  \ --ignore .git
+  \ --ignore .svn
+  \ --ignore .hg
+  \ --ignore .DS_Store
+  \ --ignore vendor
+  \ --ignore tmp
+  \ --ignore *.so
+  \ --ignore *.swo
+  \ --ignore *.swp
+  \ --ignore "**/*.pyc"
+  \ -g ""'
+
 " Disable opening files in a new buffer ("e").
 " Default to opening files in a new tab ("t").
 let g:ctrlp_prompt_mappings = {
