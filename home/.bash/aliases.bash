@@ -185,11 +185,6 @@ fi
 # Update Vagrant.
 # This only works on Mac OS X.
 if [ "`uname`" = 'Darwin' ]; then
-  function update_vagrant {
-    cd ~/src/vagrant/ \
-      && git pull origin master \
-      && vagrant up \
-      && vagrant provision
-  }
+  alias update_vagrant='cd ~/src/vagrant/ && git pull origin master && vagrant up && vagrant up --provision'
 fi
 
