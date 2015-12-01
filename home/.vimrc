@@ -1,8 +1,8 @@
 execute pathogen#infect()
 
 set nu                  " Enable line numbers.
-set ic                  " Case-insensitive searches.
-set smartcase           " Make searches case-sensitive if the search contains an upper-case character.
+set ignorecase          " Case-insensitive searches.
+set nosmartcase         " Make searches case-sensitive if the search contains an upper-case character.
 set noerrorbells        " Disable error bells.
 set foldmethod=marker
 set showcmd             " Show commands as they're typed.
@@ -163,7 +163,7 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " Reformat JSON.
 map <leader>jt :%!python -m json.tool<CR>
 
-" Load CtrlP
+" Load and configure CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Configure CtrlP
