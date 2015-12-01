@@ -87,7 +87,6 @@ alias vs='cd ~/src/vagrant/ && vagrant ssh'
 alias hpc='script/heroku_production run rails console'
 
 # Miscellaneous
-alias pg='pgrep -fl'
 alias showcpu='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 3'
 alias showmem='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 4'
 alias pv='pv -N "pv"'
