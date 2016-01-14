@@ -21,8 +21,8 @@ root: ~/src/facebook-commerce/
 windows:
   - bash:
   - test:
-  - console: bundle exec rails c
-  - server: bundle exec rails s -p 3088
+  - console:
+  - server:
   - sidekiq:
   - mysql: mysql -u root facebook_commerce_dev
 
