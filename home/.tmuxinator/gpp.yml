@@ -21,8 +21,8 @@ root: ~/src/google_product_publisher
 windows:
   - bash:
   - test:
-  - console: bundle exec rails c
-  - server: bundle exec rails s -p 5000
+  - console:
+  - server:
   - sidekiq:
   - mysql: mysql -u root google_product_publisher_development
 
