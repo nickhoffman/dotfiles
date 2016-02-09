@@ -118,13 +118,6 @@ else
   alias nst='sudo netstat -taunp'
 fi
 
-# Swap data between tmux's buffer and the OS' clipboard.
-# This only works on Mac OS X.
-if [ "`uname`" = 'Darwin' ]; then
-  alias tmc='tmux save-buffer - | pbcopy'
-  alias tmp='tmux set-buffer "$(pbpaste)"'
-fi
-
 # This is for smart running of tests. If .zeus.sock exists, then we run the
 # tests with Zeus, otherwise, fall back to Ruby.
 function rt {
