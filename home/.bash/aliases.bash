@@ -135,28 +135,5 @@ function rtf {
   rt $@ -n /focus/
 }
 
-# Forward a local port to Vagrant.
-# This only works on Mac OS X.
-if [ "`uname`" = 'Darwin' ]; then
-  function forward_to_vagrant {
-    port="$1"
-
-    if [ -z "$port" ]; then
-      echo 'Which port do you want to foward?'
-      return 1
-    fi
-
-    echo "Forwarding port $port to Vagrant."
-    echo "Hit Ctrl+C to cancel."
-
-    cd ~/src/vagrant/
-    vagrant ssh -- -N -L $port:localhost:$port
-  }
-fi
-
-# Update Vagrant.
-# This only works on Mac OS X.
-if [ "`uname`" = 'Darwin' ]; then
-  alias update_vagrant='cd ~/src/vagrant/ && git pull origin master && vagrant up && vagrant provision'
-fi
-
+# Load Shopify-specific aliases and functions.
+source ~/.bash/aliases.shopify.bash
