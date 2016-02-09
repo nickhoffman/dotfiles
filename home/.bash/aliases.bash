@@ -121,10 +121,10 @@ fi
 # This is for smart running of tests. If .zeus.sock exists, then we run the
 # tests with Zeus, otherwise, fall back to Ruby.
 function rt {
-  if [ -e .zeus.sock ]; then
-    bundle exec zeus test $1
-  elif grep -q "spring-commands-testunit" Gemfile; then
+  if grep -q "spring-commands-testunit" Gemfile; then
     bundle exec spring testunit $@
+  elif [ -d 'spec' ]; then
+    bundle exec rspec $1
   else
     bundle exec ruby -Itest $@
   fi
