@@ -25,7 +25,7 @@ if [ "`uname`" = 'Darwin' ]; then
   # Begin functions for swapping between using Shopify production and app4.
 
   function _chbrochure_resolve() {
-    resolveip $1 | awk '{ print $6 }'
+    host "$1" | tail -n 1 | sed -e 's/.*has address //'
   }
 
   function _chbrochure_host() {
