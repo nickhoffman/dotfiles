@@ -5,3 +5,4 @@
 *.swo
 db/dumps/
 vendor/bundle/
+.bundle/cache/
