@@ -75,20 +75,11 @@ alias tmux='tmux -2'
 alias tms='tmux new-session -s'
 alias yak='mux yak'
 
-# Vagrant
-alias vu='vagrant up'
-alias vsu='vagrant suspend'
-alias vr='vagrant resume'
-alias vs='cd ~/src/vagrant/ && vagrant ssh'
-
 # Miscellaneous
 alias showcpu='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 3'
 alias showmem='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 4'
 alias pv='pv -N "pv"'
 alias shred='shred -u'
-alias echo_ruby_load_commands="for i in \`pwd\`/*; do echo \"load '\$i'\"; done"
-alias format_json='python -c "import sys, json; print json.dumps(json.load(sys.stdin), sort_keys=True, indent=2)"'
-alias http_proxy='echo "Starting Squid3 on deadorange.com" ; ssh -t deadorange.com sudo service squid3 restart ; ssh -vN -L 127.0.0.1:3128:localhost:3128 deadorange.com ; echo "Stopping Squid3 on deadorange.com ..."; ssh -t deadorange.com sudo service squid3 stop'
 alias open-ports="sudo lsof -iTCP -sTCP:LISTEN -P"
 
 # For backing up my data at home.
