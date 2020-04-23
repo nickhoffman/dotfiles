@@ -1,5 +1,6 @@
 execute pathogen#infect()
 
+set nocompatible        " Be ViM. Don't be backwards compatible with Vi.
 set nu                  " Enable line numbers.
 set ignorecase          " Case-insensitive searches.
 set nosmartcase         " Make searches case-sensitive if the search contains an upper-case character.
@@ -32,10 +33,18 @@ set scrolloff=5         " Start scrolling through the window when the cursor is 
 set sidescrolloff=5     " Same as above, but for horizontal motion.
 set whichwrap=h,l       " Allow the 'l' and 'h' keys to move the cursor to the next and previous lines, respectively.
 set nowrap
-set diffopt+=iwhite     " Ignore whitespace in vimdiff.
-set pastetoggle=<F2>    " Use <F2> to toggle paste/nopaste in insert-mode
+set pastetoggle=<C-j>   " Use <F2> to toggle paste/nopaste in insert-mode
 set tabpagemax=50       " Allow 50 tabs.
 set ls=2                " Always show the filename.
+
+" Ignore whitespace in vimdiff.
+if &diff
+  " diff mode
+  set diffopt+=iwhite
+endif
+
+" Set the leader character to the space character (" ").
+let mapleader = " "
 
 " Configure % to jump between if/elsif/end , and other things.
 runtime macros/matchit.vim
@@ -55,6 +64,10 @@ syntax on
 set background=dark
 colorscheme peaksea
 
+" Show a vertical line to indicate line wrapping.
+highlight ColorColumn ctermbg=8
+set colorcolumn=120
+
 " Custom HTML indentation
 let g:html_indent_inctags = "li"
 
@@ -63,8 +76,8 @@ if &diff
 endif
 
 " Set folding options.
-vmap <space> zf
-nmap <space> zo
+vmap F zf
+nmap F zo
 nmap f zc
 nmap j gj
 nmap k gk
@@ -102,31 +115,12 @@ noremap :tabstowhitespace :%s/\t/  /g
 " Remove trailing spaces.
 noremap :trail :s/\s\+$//
 
-" Map CTRL+@ to ESC.
-noremap! <C-@> <esc>l
-
 " Map CTRL+n to CTRL+w because the former is easier to type.
 " This makes it easier to switch viewports.
 noremap <C-n> <C-w>
 
-" Map CTRL+SHIFT+[JK] scroll the buffer by 3 lines in the respective direction.
-nnoremap <C-J> 3<C-e>
-nnoremap <C-K> 3<C-y>
-
 " Map :ind to indent by 2 spaces.
 map :ind :s/^/  /<CR>
-
-" Macros to fold blocks. {{{
-" Map @a to add 3 open-braces to the end of the current line.
-nnoremap @a $a # {{{<esc>0w
-
-" Map @b to add 3 close-braces to the end of the current line.
-nnoremap @b $a # }}}<esc>0w
-
-" Map @c to add code folding to the current block. Note that the cursor must
-" be on the line that marks the beginning of the block.
-"nnoremap @c $a # {{{<esc>0w%$a # }}}<esc>0w
-" End macros to fold blocks. }}}
 
 " Map @q to convert double-quotes to single-quotes on the current line.
 noremap @q :s/"/'/g<CR>
@@ -163,10 +157,10 @@ au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 " Reformat JSON.
 map <leader>jt :%!python -m json.tool<CR>
 
-" Load and configure CtrlP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+" Configure CtrlP. {{{
 
-" Configure CtrlP
+" Load and configure CtrlP.
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 " Ctrl-O opens CtrlP for the current word.
 map <C-o> <C-P><C-\>w
@@ -196,3 +190,24 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': [],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+
+" }}}
+
+" Configure the vim-ruby plugin. {{{
+" See https://github.com/vim-ruby/vim-ruby/blob/master/doc/vim-ruby.txt
+
+" Use do-style block indentation.
+let g:ruby_indent_block_style = 'do'
+
+" Use variable-style indenting assignment.
+let g:ruby_indent_assignment_style = 'variable'
+" }}}
+
+" Configure Prettier formatting for JS, TS, CSS, etc. {{{
+
+" Disable typescript-vim's custom indenter.
+"let g:typescript_indent_disable = 1
+
+let g:prettier#autoformat = 0
+autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
+" }}}
