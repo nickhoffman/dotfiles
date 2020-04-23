@@ -3,16 +3,15 @@
 if [ "`uname -s`" = "Darwin" ]; then
   # Needed for The Silver Searcher's Bash completion.
   shopt -s extglob
-fi
 
-if [[ -d /usr/local/etc/bash_completion.d ]]; then
-  for file in /usr/local/etc/bash_completion.d/*; do
-    source $file
-  done
-fi
+  if [ -f `brew --prefix`/etc/bash_completion ]; then
+    . `brew --prefix`/etc/bash_completion
+  fi
 
-#if [[ -d /etc/bash_completion.d ]]; then
-#  for file in /etc/bash_completion.d/*; do
-#    source $file
-#  done
-#fi
+# if [[ -d `brew --prefix`/etc/bash_completion.d ]]; then
+#   for file in `brew --prefix`/etc/bash_completion.d/*; do
+#     echo "sourcing $file"
+#     source $file
+#   done
+# fi
+fi
