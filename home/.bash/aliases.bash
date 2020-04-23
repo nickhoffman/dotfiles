@@ -33,6 +33,7 @@ alias sv='/usr/bin/sudo vim'
 alias sl='cd ~/src/shelflife'
 alias slm='cd ~/src/shelflife-misc'
 alias vi='vim -p'
+alias mux='tmuxinator'
 
 
 if [ "`uname`" = 'Darwin' ]; then
@@ -71,6 +72,7 @@ alias bi='bundle install'
 alias be='bundle exec'
 alias berc='be rails console'
 alias ura='gfop && bundle install && bundle exec rake db:migrate db:test:prepare'
+alias as_json='python -m json.tool'
 
 # tmux
 alias tmux='tmux -2'
@@ -83,9 +85,6 @@ alias vsu='vagrant suspend'
 alias vr='vagrant resume'
 alias vs='cd ~/src/vagrant/ && vagrant ssh'
 
-# Shopify
-alias hpc='script/heroku_production run rails console'
-
 # Miscellaneous
 alias showcpu='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 3'
 alias showmem='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 4'
@@ -95,15 +94,6 @@ alias echo_ruby_load_commands="for i in \`pwd\`/*; do echo \"load '\$i'\"; done"
 alias format_json='python -c "import sys, json; print json.dumps(json.load(sys.stdin), sort_keys=True, indent=2)"'
 alias http_proxy='echo "Starting Squid3 on deadorange.com" ; ssh -t deadorange.com sudo service squid3 restart ; ssh -vN -L 127.0.0.1:3128:localhost:3128 deadorange.com ; echo "Stopping Squid3 on deadorange.com ..."; ssh -t deadorange.com sudo service squid3 stop'
 alias open-ports="sudo lsof -iTCP -sTCP:LISTEN -P"
-
-# For my external monitor at home.
-if [ "`uname`" == 'Linux' ]; then
-  alias lcd_on='lenovo_acer_lcd_on'
-  alias lcd_off='lenovo_lcd_off'
-  alias lenovo_acer_lcd_on='xrandr --output HDMI1 --mode 1920x1080 --pos 0x0 --output LVDS1 --mode 1600x900 --pos 0x1080'
-  alias lenovo_samsung_lcd_on='xrandr --output HDMI1 --mode 1680x1050 --pos 0x0 --output LVDS1 --mode 1600x900 --pos 0x1050'
-  alias lenovo_lcd_off='xrandr --output HDMI1 --off'
-fi
 
 # For backing up my data at home.
 if [ "`uname`" == 'Linux' ]; then
