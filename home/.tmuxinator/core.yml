@@ -1,7 +1,7 @@
 # ~/.tmuxinator/core.yml
 
 name: core
-root: ~/src/shopify/
+root: ~/src/github.com/Shopify/shopify/
 
 # Optional tmux socket
 # socket_name: foo
@@ -19,8 +19,8 @@ root: ~/src/shopify/
 # tmux_command: byobu
 
 windows:
+  - code:
   - bash:
-  - test:
   - console:
   - server:
 
