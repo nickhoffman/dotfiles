@@ -53,3 +53,4 @@ else
 fi
 unset color_prompt force_color_prompt
 
+export DISABLE_SPRING=1
