@@ -6,13 +6,6 @@ if [ -d /usr/local/bin ]; then
   export PATH=$PATH:/usr/local/sbin
 fi
 
-# rbenv
-which rbenv >/dev/null
-if [ "x$?" = "x0" ]; then
-  export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(rbenv init -)"
-fi
-
 # NPM
 if [ -d /usr/local/share/npm/bin ]; then
   export PATH=$PATH:/usr/local/share/npm/bin
