@@ -7,7 +7,7 @@ done
 export PATH="$PATH:$HOME/Library/Python/3.7/bin"
 
 # Load nvm
-export NVM_DIR="${HOME}/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # load dev, but only if present and the shell is interactive
