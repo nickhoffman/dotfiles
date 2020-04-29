@@ -4,8 +4,7 @@ for file in ~/.bash/*.bash; do
   source $file
 done
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+export PATH="$PATH:$HOME/Library/Python/3.7/bin"
 
 # Load nvm
 export NVM_DIR="${HOME}/.nvm"
