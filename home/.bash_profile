@@ -1,2 +1,2 @@
+if [[ -f /opt/dev/dev.sh ]]; then source /opt/dev/dev.sh; fi
 . ~/.bashrc
-if [ -e /Users/nick/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/nick/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
