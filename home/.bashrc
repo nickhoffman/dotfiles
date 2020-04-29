@@ -25,7 +25,5 @@ if [ -z "$TMUX" ]; then
   fi
 fi
 
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # Disable Mac OS' deprecation warning of Bash.
 export BASH_SILENCE_DEPRECATION_WARNING=1
