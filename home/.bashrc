@@ -17,7 +17,7 @@ fi
 
 # If not inside of tmux, use the newest version of Ruby that's installed.
 if [ -z "$TMUX" ]; then
-  type chruby | grep -q 'is a function'
+  type chruby 2>/dev/null | grep -q 'is a function'
   if [ "$?" -eq "0" ]; then
     newest_version=`chruby | tail -1 | tr -d '[:space:]'`
     echo "Using Ruby version ${newest_version}"
