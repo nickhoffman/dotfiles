@@ -23,4 +23,5 @@ windows:
   - bash:
   - console:
   - server:
-
+  - identity:
+    - dev cd identity && clear
