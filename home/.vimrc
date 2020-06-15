@@ -117,7 +117,11 @@ noremap :trail :s/\s\+$//
 
 " Map CTRL+n to CTRL+w because the former is easier to type.
 " This makes it easier to switch viewports.
+" <C-j> isn't mapped to <C-w>j because <C-j> is used by tmux.
 noremap <C-n> <C-w>
+map <C-h> <C-w>h
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Map :ind to indent by 2 spaces.
 map :ind :s/^/  /<CR>
