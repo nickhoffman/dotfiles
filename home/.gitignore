@@ -6,3 +6,4 @@
 db/dumps/
 vendor/bundle/
 .bundle/cache/
+notes.txt
