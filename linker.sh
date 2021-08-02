@@ -11,6 +11,38 @@ if [[ ! -d /usr/local/bin ]]; then
   exit 1
 fi
 
+if [[ ! -w /usr/local/bin ]]; then
+  echo 'ERROR: You must be able to write to /usr/local/bin'
+  exit 1
+fi
+
+which brew 2>/dev/null
+if [[ $? -ne 0 ]]; then
+  echo 'ERROR: Install Homebrew and re-run this.'
+  exit 1
+fi
+
+if [[ ! -d ~/.oh-my-zsh ]]; then
+  echo 'ERROR: Install oh-my-zsh and re-run this.'
+  exit 1
+fi
+
+echo '### Installing Homebrew packages'
+while IFS= read -r package; do
+  echo
+  echo "Installing Homebrew package: $package"
+  brew install "$package"
+done <home/.homebrew_packages_to_install
+echo
+
+echo '### Installing Ruby gems'
+while IFS= read -r gem; do
+  echo
+  echo "Installing Ruby gem: $gem"
+  gem install "$gem"
+done <home/.ruby_gems_to_install
+echo
+
 echo '### Installing personal config files'
 for file in home/.[^.]*; do
   path="$(pwd)/$file"

@@ -1,7 +1,7 @@
-# ~/.tmuxinator/core.yml
+# ~/.tmuxinator/default.yml
 
-name: core
-root: ~/src/github.com/Shopify/shopify/
+name: default
+root: ~/src
 
 # Optional tmux socket
 # socket_name: foo
@@ -14,6 +14,7 @@ root: ~/src/github.com/Shopify/shopify/
 
 # Pass command line options to tmux. Useful for specifying a different tmux.conf.
 # tmux_options: -f ~/.tmux.mac.conf
+tmux_options: -2
 
 # Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
 # tmux_command: byobu
@@ -23,4 +24,3 @@ windows:
   - bash:
   - console:
   - server:
-

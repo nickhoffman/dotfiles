@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /bin/sh
 
 # Commonly-used aliases.
 alias ..='cd ..'
@@ -42,7 +42,7 @@ fi
 
 # APT
 # These only work on Linux.
-if [ "`uname`" == 'Linux' ]; then
+if [[ "`uname`" == 'Linux' ]]; then
   alias atu='sudo aptitude -V update'
   alias atug='sudo aptitude -V safe-upgrade'
   alias ati='sudo aptitude -V install'
@@ -83,7 +83,7 @@ alias shred='shred -u'
 alias open-ports="sudo lsof -iTCP -sTCP:LISTEN -P"
 
 # For backing up my data at home.
-if [ "`uname`" == 'Linux' ]; then
+if [[ "`uname`" == 'Linux' ]]; then
   alias rsync-backup-home='sudo rsync -avzh --hard-links --inplace --numeric-ids --itemize-changes --delete-after --ignore-errors /home/ /mnt/backup-home'
   alias rsync-backup-os='sudo rsync -avzhx --hard-links --inplace --numeric-ids --itemize-changes --delete-after --ignore-errors --exclude /dev --exclude /mnt --exclude /proc --exclude /sys --exclude /tmp / /mnt/backup-os/'
 fi
@@ -111,6 +111,3 @@ function rt {
 function rtf {
   rt $@ -n /focus/
 }
-
-# Load Shopify-specific aliases and functions.
-source ~/.bash/aliases.shopify.bash
