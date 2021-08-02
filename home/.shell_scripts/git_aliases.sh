@@ -1,3 +1,5 @@
+#!/bin/sh
+
 __define_git_completion () {
 eval "
     _git_$2_shortcut () {
