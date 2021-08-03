@@ -29,7 +29,7 @@ alias su='/bin/su -'
 alias v='view'
 alias sv='/usr/bin/sudo vim'
 alias vi='vim -p'
-alias mux='tmuxinator'
+alias mux='tmuxp load'
 
 
 if [ "`uname`" = 'Darwin' ]; then
