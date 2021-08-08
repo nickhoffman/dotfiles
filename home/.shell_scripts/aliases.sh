@@ -113,3 +113,8 @@ function rt {
 function rtf {
   rt $@ -n /focus/
 }
+
+# Run tests and format the output as documentation.
+function rtd {
+  rt $@ -f d
+}
