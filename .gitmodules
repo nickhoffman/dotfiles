@@ -1,3 +1,6 @@
 [submodule "home/.vim/bundle/vim-prettier"]
 	path = home/.vim/bundle/vim-prettier
 	url = https://github.com/prettier/vim-prettier
+[submodule "home/.vim/bundle/vim-graphql"]
+	path = home/.vim/bundle/vim-graphql
+	url = https://github.com/jparise/vim-graphql
