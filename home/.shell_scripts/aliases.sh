@@ -100,6 +100,8 @@ fi
 function rt {
   if grep -q "spring-commands-testunit" Gemfile; then
     bundle exec spring testunit $@
+  elif grep -q "spring-commands-rspec" Gemfile; then
+    bundle exec spring rspec $@
   elif [ -d 'spec' ]; then
     bundle exec rspec $1
   else
