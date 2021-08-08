@@ -27,6 +27,11 @@ if [[ ! -d ~/.oh-my-zsh ]]; then
   exit 1
 fi
 
+echo '### Setting up Git submodules'
+git submodule init
+git submodule update
+echo
+
 echo '### Installing Homebrew packages'
 while IFS= read -r package; do
   echo
