@@ -6,6 +6,8 @@ vim
 ruby
 chruby
 ruby-install
+node
+yarn
 reattach-to-user-namespace
 tmux
 tmuxp
