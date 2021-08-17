@@ -215,3 +215,6 @@ let g:ruby_indent_assignment_style = 'variable'
 let g:prettier#autoformat = 0
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 " }}}
+
+" Map <leader>f to copy the current file path to the clipboard.
+map <Leader>f :let @+=expand('%')<CR>
