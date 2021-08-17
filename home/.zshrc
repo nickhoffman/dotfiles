@@ -97,6 +97,10 @@ source $ZSH/oh-my-zsh.sh
 # fi
 export EDITOR='vim'
 
+# Disable verification of history expansion.
+# https://zsh.sourceforge.io/Doc/Release/Options.html#index-NOHISTVERIFY
+setopt nohistverify
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
