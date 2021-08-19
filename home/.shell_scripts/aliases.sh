@@ -95,8 +95,7 @@ else
   alias nst='sudo netstat -taunp'
 fi
 
-# This is for smart running of tests. If .zeus.sock exists, then we run the
-# tests with Zeus, otherwise, fall back to Ruby.
+# This is for smart running of tests.
 function rt {
   if grep -q "spring-commands-testunit" Gemfile; then
     bundle exec spring testunit $@
