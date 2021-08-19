@@ -63,6 +63,7 @@ alias bi='bundle install'
 alias be='bundle exec'
 alias berc='be rails console'
 alias as_json='python -m json.tool'
+alias ss='bin/spring stop'
 
 # tmux
 alias tmux='tmux -2'
