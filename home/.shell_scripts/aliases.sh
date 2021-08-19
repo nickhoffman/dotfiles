@@ -59,21 +59,13 @@ if [[ "`uname`" == 'Linux' ]]; then
 fi
 
 # Development
-alias ri='ri -T'
-alias spec='spec -c'
-alias ss='script/server'
-alias sc='script/console'
-alias migration_date='date +"%Y%m%d%H%M%S"'
 alias bi='bundle install'
 alias be='bundle exec'
 alias berc='be rails console'
-alias ura='gfop && bundle install && bundle exec rake db:migrate db:test:prepare'
 alias as_json='python -m json.tool'
 
 # tmux
 alias tmux='tmux -2'
-alias tms='tmux new-session -s'
-alias yak='mux yak'
 
 # Miscellaneous
 alias showcpu='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 3'
