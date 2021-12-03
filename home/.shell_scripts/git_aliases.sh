@@ -44,6 +44,7 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gcom   checkout master
   __git_shortcut grm    rebase master
   __git_shortcut gp     push
+  __git_shortcut gpomp  push origin master:production
   __git_shortcut gfa    fetch --all --prune
   __git_shortcut gfo    fetch --prune origin
   __git_shortcut gfom   fetch --prune origin master
