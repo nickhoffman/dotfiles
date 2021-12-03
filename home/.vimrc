@@ -33,7 +33,6 @@ set scrolloff=5         " Start scrolling through the window when the cursor is 
 set sidescrolloff=5     " Same as above, but for horizontal motion.
 set whichwrap=h,l       " Allow the 'l' and 'h' keys to move the cursor to the next and previous lines, respectively.
 set nowrap
-set pastetoggle=<C-j>   " Use <F2> to toggle paste/nopaste in insert-mode
 set tabpagemax=50       " Allow 50 tabs.
 set ls=2                " Always show the filename.
 
@@ -218,3 +217,6 @@ autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.gra
 
 " Map <leader>f to copy the current file path to the clipboard.
 map <Leader>f :let @+=expand('%')<CR>
+
+" Map <leader>p to toggle paste mode.
+map <leader>p :set invpaste<CR>
