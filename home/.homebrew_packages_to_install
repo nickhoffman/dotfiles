@@ -11,7 +11,7 @@ yarn
 reattach-to-user-namespace
 tmux
 tmuxp
-powerlevel10k
+romkatv/powerlevel10k/powerlevel10k
 rename
 tree
 prettier
