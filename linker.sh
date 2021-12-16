@@ -33,19 +33,11 @@ git submodule update
 echo
 
 echo '### Installing Homebrew packages'
-while IFS= read -r package; do
-  echo
-  echo "Installing Homebrew package: $package"
-  brew install "$package"
-done <home/.homebrew_packages_to_install
+brew install `paste -s -d ' ' home/.homebrew_packages_to_install`
 echo
 
 echo '### Installing Ruby gems'
-while IFS= read -r gem; do
-  echo
-  echo "Installing Ruby gem: $gem"
-  gem install "$gem"
-done <home/.ruby_gems_to_install
+gem install `paste -s -d ' ' home/.ruby_gems_to_install`
 echo
 
 echo '### Installing personal config files'
