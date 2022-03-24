@@ -113,6 +113,12 @@ setopt nohistverify
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+if [[ -d /opt/homebrew ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
+
 source "`brew --prefix`/opt/powerlevel10k/powerlevel10k.zsh-theme"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
