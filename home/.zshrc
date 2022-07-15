@@ -126,10 +126,6 @@ source "`brew --prefix`/opt/powerlevel10k/powerlevel10k.zsh-theme"
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-source "`brew --prefix`/opt/chruby/share/chruby/chruby.sh"
-source "`brew --prefix`/opt/chruby/share/chruby/auto.sh"
-chruby `chruby | tail -n 1`
-
 for file in ~/.shell_scripts/*.sh; do
   source "$file"
 done
