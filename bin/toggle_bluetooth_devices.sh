@@ -1,10 +1,8 @@
-#!/usr/local/bin/zsh
-
 # Bluetooth device IDs
 trackpad_id='d8-96-95-e1-c8-08'   # Nick Hoffman's Trackpad
 keyboard_id='c8-e0-eb-0f-a0-9a'   # Nick Hoffman’s Keyboard
 
-bt_cmd='/usr/local/bin/blueutil'
+bt_cmd='blueutil'
 
 $bt_cmd --power | grep -q '^1$'
 if [[ "x$?" = 'x0' ]]; then
