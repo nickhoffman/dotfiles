@@ -40,7 +40,7 @@ echo '### Installing Ruby'
 asdf plugin add ruby
 asdf plugin-update ruby
 asdf install ruby latest
-asdf global ruby $(asdf list ruby | tail -n 1 | sed -E 's/.*([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+asdf global ruby latest
 echo
 
 echo '### Installing Ruby gems'
