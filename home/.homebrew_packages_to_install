@@ -4,8 +4,7 @@ git
 md5sha1sum
 vim
 ruby
-chruby
-ruby-install
+asdf
 node
 yarn
 reattach-to-user-namespace
