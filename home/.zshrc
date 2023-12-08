@@ -102,6 +102,15 @@ export EDITOR='vim'
 # https://zsh.sourceforge.io/Doc/Release/Options.html#index-NOHISTVERIFY
 setopt nohistverify
 
+# Disable appending items to the shell command history incrementally.
+# Instead, all commands from a terminal session are appended when the shell
+# exits.
+unsetopt inc_append_history
+
+# Disable importing new commands that are added to the shell history file
+# (I.E. commands from other terminal sessions).
+unsetopt share_history
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
