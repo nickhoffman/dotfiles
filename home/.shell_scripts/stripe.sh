@@ -1,4 +1,4 @@
-/bin/hostname | grep -q 'st-hoffman1'
+/bin/hostname | grep -q 'st-hoffman'
 if [[ "x$?" = 'x0' ]]; then
   export GH_HOST="git.corp.stripe.com"
 
@@ -8,4 +8,6 @@ if [[ "x$?" = 'x0' ]]; then
   source ~/.bashrc
   eval "$(nodenv init -)"
   compdef _git stripe-git=git # this line specifically will fix git autocompletion
+
+  export GOPATH="/Users/hoffman/go"
 fi
