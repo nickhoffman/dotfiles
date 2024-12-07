@@ -212,6 +212,7 @@ let g:ruby_indent_assignment_style = 'variable'
 "let g:typescript_indent_disable = 1
 
 let g:prettier#autoformat = 0
+let g:prettier#config#tab_width = '2'
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue,*.yaml,*.html Prettier
 " }}}
 
