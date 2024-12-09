@@ -7,12 +7,12 @@ function symlink {
 }
 
 if [[ ! -d /usr/local/bin ]]; then
-  echo 'ERROR: Directory /usr/local/bin does not exist.'
+  echo 'ERROR: Directory /usr/local/bin/ must exist and be writable.'
   exit 1
 fi
 
 if [[ ! -w /usr/local/bin ]]; then
-  echo 'ERROR: You must be able to write to /usr/local/bin'
+  echo 'ERROR: You must be able to write to /usr/local/bin/'
   exit 1
 fi
 
