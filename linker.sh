@@ -105,4 +105,12 @@ for file in bin/*; do
   fi
 done
 
+echo '### Running personal config commands'
+# Enable key repeating in VS Code by disabling key press-and-hold in VS Code.
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
+defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false
+defaults write com.vscodium ApplePressAndHoldEnabled -bool false
+defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false
+
 # END: Install personal stuff.
