@@ -6,6 +6,8 @@ function symlink {
   ln -nsf $1 $2
 }
 
+# START: Prerequisites
+
 if [[ ! -d /usr/local/bin ]]; then
   echo 'ERROR: Directory /usr/local/bin/ must exist and be writable.'
   exit 1
@@ -27,6 +29,10 @@ if [[ ! -d ~/.oh-my-zsh ]]; then
   exit 1
 fi
 
+# END: Prerequisites
+
+# START: Install 3rd-party software.
+
 echo '### Setting up Git submodules'
 git submodule init
 git submodule update
@@ -46,6 +52,10 @@ echo
 echo '### Installing Ruby gems'
 gem install `paste -s -d ' ' home/.ruby_gems_to_install`
 echo
+
+# END: Install 3rd-party software.
+
+# START: Install personal stuff.
 
 echo '### Installing personal config files'
 for file in home/.[^.]*; do
@@ -94,3 +104,5 @@ for file in bin/*; do
     symlink $path $target
   fi
 done
+
+# END: Install personal stuff.
