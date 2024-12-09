@@ -102,7 +102,7 @@ nnoremap # :s/^ \?/#/<CR>j
 "map ` :s/^.//<CR>j
 nnoremap ` :s/^#\( \)\?/\1\1/<CR>j
 
-" Map ';' to switch the position of the current line and the one below it.
+" Map ';' to swap the position of the current line and the one below it.
 noremap ; ddpk0
 
 noremap - /<<<<<<CR>
@@ -157,8 +157,8 @@ com! -nargs=+ -complete=file AddTabs tabnew|exec "args" <q-args>|tab ball
 " add jbuilder syntax highlighting
 au BufNewFile,BufRead *.json.jbuilder set ft=ruby
 
-" Reformat JSON.
-map <leader>jt :%!python -m json.tool<CR>
+" Reformat JSON. Not needed since I use Prettier now?
+"map <leader>jt :%!python -m json.tool<CR>
 
 " Configure CtrlP. {{{
 
