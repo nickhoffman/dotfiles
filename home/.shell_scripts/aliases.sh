@@ -65,9 +65,6 @@ alias berc='be rails console'
 alias as_json='python -m json.tool'
 alias ss='bin/spring stop'
 
-# tmux
-alias tmux='tmux -2'
-
 # Miscellaneous
 alias showcpu='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 3'
 alias showmem='/bin/ps auxf | head -1; /bin/ps auxf | sort -nr -k 4'
