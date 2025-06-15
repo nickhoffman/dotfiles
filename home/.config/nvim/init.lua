@@ -1,0 +1,17 @@
+require "keymappings"
+
+-- START: Move these configs to separate file.
+vim.opt.ignorecase = true
+-- END: Move these configs to separate file.
+
+if vim.g.vscode then
+  -- VSCode Neovim
+  require "vscode_keymappings"
+else
+  -- Ordinary Neovim
+  vim.wo.number = true
+end
+
+-- Load the config from ~/.config/vimrc.vim
+local vimrc = vim.fn.stdpath("config") .. "/vimrc.vim"
+vim.cmd.source(vimrc)
