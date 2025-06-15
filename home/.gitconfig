@@ -11,7 +11,7 @@
   tool = vimdiff
 [core]
   editor = vim
-  excludesfile = ~/.gitignore
+  excludesfile = ~/.config/git/ignore
   commitGraph = true
 [interactive]
   singlekey = true
