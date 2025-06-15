@@ -53,3 +53,7 @@ keymap("n", ">", "<cmd>lua require('vscode').action('workbench.action.nextEditor
 -- Make it easier to switch between split viewports.
 keymap("n", "<C-h>", "<cmd>lua require('vscode').action('workbench.action.focusPreviousGroup')<CR>")
 keymap("n", "<C-l>", "<cmd>lua require('vscode').action('workbench.action.focusNextGroup')<CR>")
+
+-- Make "j" and "k" move through wrapped lines (VS Code)
+keymap({"n", "v"}, "j", "<cmd>lua require('vscode').action('cursorDown')<CR>", opts)
+keymap({"n", "v"}, "k", "<cmd>lua require('vscode').action('cursorUp')<CR>", opts)

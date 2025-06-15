@@ -8,8 +8,6 @@ keymap("n", ">", "gt", opts)
 -- Map ';' to swap the position of the current line and the one below it.
 keymap("n", ";", "ddpk0", opts)
 
--- Make 'j' and 'k' move through wrapped lines
-keymap("n", "j", "gj", opts)
-keymap("n", "k", "gk", opts)
-keymap("v", "j", "gj", opts)
-keymap("v", "k", "gk", opts)
+-- Make "j" and "k" move through wrapped lines.
+keymap({"n", "v"}, "j", "gj", opts)
+keymap({"n", "v"}, "k", "gk", opts)
