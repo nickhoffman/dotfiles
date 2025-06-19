@@ -3,6 +3,3 @@ if [[ -d /opt/homebrew ]]; then
 else
   eval "$(/usr/local/bin/brew shellenv)"
 fi
-
-export GOPATH="$HOME/src/go"
-export PATH=$PATH:$GOPATH/bin
