@@ -9,5 +9,5 @@ if [[ "x$?" = 'x0' ]]; then
   eval "$(nodenv init -)"
   compdef _git stripe-git=git # this line specifically will fix git autocompletion
 
-  export GOPATH="/Users/hoffman/go"
+  export PAY_DEFAULT_EDITOR=cursor
 fi
