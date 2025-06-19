@@ -55,6 +55,12 @@ fi
 
 alias gfop='gfo && git pull'
 
+function git_files_changed_in_branch {
+  current_branch="$(git rev-parse --abbrev-ref HEAD)"
+  common_ancestor="$(git merge-base ${current_branch} master)"
+  git diff --name-only $current_branch $common_ancestor
+}
+
 function gcmput {
   (set -x; gc -m "put this in $@")
 }
