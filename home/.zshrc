@@ -163,3 +163,9 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# START - Managed by chef cookbook stripe_cpe_bin
+alias tc='/usr/local/stripe/bin/test_cookbook'
+alias cz='/usr/local/stripe/bin/chef-zero'
+alias cookit='tc && cz'
+# STOP - Managed by chef cookbook stripe_cpe_bin
