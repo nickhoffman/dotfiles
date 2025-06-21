@@ -55,5 +55,5 @@ keymap("n", "<C-h>", "<cmd>lua require('vscode').action('workbench.action.focusP
 keymap("n", "<C-l>", "<cmd>lua require('vscode').action('workbench.action.focusNextGroup')<CR>")
 
 -- Make "j" and "k" move through wrapped lines (VS Code)
-keymap({"n", "v"}, "j", "<cmd>lua require('vscode').action('cursorDown')<CR>", opts)
-keymap({"n", "v"}, "k", "<cmd>lua require('vscode').action('cursorUp')<CR>", opts)
+keymap("n", "j", "<cmd>lua require('vscode').action('cursorDown')<CR>", opts)
+keymap("n", "k", "<cmd>lua require('vscode').action('cursorUp')<CR>", opts)
