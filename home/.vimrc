@@ -32,7 +32,7 @@ set history=100         " The number of commands and search patterns to remember
 set scrolloff=5         " Start scrolling through the window when the cursor is X lines above/below the top/bottom of the buffer.
 set sidescrolloff=5     " Same as above, but for horizontal motion.
 set whichwrap=h,l       " Allow the 'l' and 'h' keys to move the cursor to the next and previous lines, respectively.
-set nowrap
+set wrap
 set tabpagemax=50       " Allow 50 tabs.
 set ls=2                " Always show the filename.
 
