@@ -1,4 +1,4 @@
-The file $ARGUMENTS contains instructions for how to achieve a future goal. Follow these steps:
+The file $ARGUMENTS contains the goal and requirements for a new feature to build. Follow these steps:
 
 1. Identify gaps in the instructions and show them to me.
 2. Don't make assumptions or guesses about how the gaps should be filled in.
