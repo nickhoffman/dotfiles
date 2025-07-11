@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Read the main plan file to understand the structure",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create milestone_01.md for Foundation & Setup",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create milestone_02.md for Page Detection & Download Button",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create milestone_03.md for Queue System Implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Create milestone_04.md for Download Engine Implementation",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Create milestone_05.md for Testing & Refinement",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  }
+]

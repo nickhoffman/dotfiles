@@ -1,0 +1,110 @@
+[
+  {
+    "content": "Create database migration to add status columns to downloaded_albums and downloaded_files tables",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create backfill migration to set existing records to 'queued' status",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Run migrations and verify database changes",
+    "status": "completed",
+    "priority": "high",
+    "id": "17"
+  },
+  {
+    "content": "Write failing tests for DownloadedAlbum status validation",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Add status validation to DownloadedAlbum model",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Write failing tests for DownloadedFile status validation",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Add status validation to DownloadedFile model",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Write failing tests for CreateDownloadedAlbum operation default status",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Update CreateDownloadedAlbum operation to set default status",
+    "status": "completed",
+    "priority": "medium",
+    "id": "8"
+  },
+  {
+    "content": "Write failing tests for CreateDownloadedFile operation default status",
+    "status": "completed",
+    "priority": "medium",
+    "id": "9"
+  },
+  {
+    "content": "Update CreateDownloadedFile operation to set default status",
+    "status": "completed",
+    "priority": "medium",
+    "id": "10"
+  },
+  {
+    "content": "Update DownloadedAlbums factory to include status attribute",
+    "status": "completed",
+    "priority": "low",
+    "id": "15"
+  },
+  {
+    "content": "Update DownloadedFiles factory to include status attribute",
+    "status": "completed",
+    "priority": "low",
+    "id": "16"
+  },
+  {
+    "content": "Write failing tests for DownloadedAlbumsController status parameter handling",
+    "status": "completed",
+    "priority": "medium",
+    "id": "11"
+  },
+  {
+    "content": "Update DownloadedAlbumsController to allow status parameter",
+    "status": "completed",
+    "priority": "medium",
+    "id": "12"
+  },
+  {
+    "content": "Write failing tests for DownloadedFilesController status parameter handling",
+    "status": "completed",
+    "priority": "medium",
+    "id": "13"
+  },
+  {
+    "content": "Update DownloadedFilesController to allow status parameter",
+    "status": "completed",
+    "priority": "medium",
+    "id": "14"
+  },
+  {
+    "content": "Run full test suite to ensure all tests pass",
+    "status": "completed",
+    "priority": "high",
+    "id": "18"
+  }
+]

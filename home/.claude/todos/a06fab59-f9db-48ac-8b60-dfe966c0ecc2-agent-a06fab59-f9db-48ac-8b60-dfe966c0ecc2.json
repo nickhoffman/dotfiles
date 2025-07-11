@@ -1,0 +1,20 @@
+[
+  {
+    "content": "Analyze existing codebase structure and identify components to test",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create detailed testing plan in plan.md",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Research Chrome extension testing requirements",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  }
+]

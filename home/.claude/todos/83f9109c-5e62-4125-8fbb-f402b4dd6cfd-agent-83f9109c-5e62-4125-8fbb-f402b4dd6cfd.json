@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Install debug package and TypeScript types",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Update package.json dev script to enable debug output",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Replace console.log calls in src/hooks/useSettings.ts (6 calls)",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Replace console.log calls in src/background.ts (2 calls)",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Test the implementation with npm run dev",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update CLAUDE.md with debug usage instructions",
+    "status": "completed",
+    "priority": "low",
+    "id": "6"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Explore repository structure and identify key directories",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Check for existing configuration files (package.json, Gemfile, etc.)",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Analyze code architecture and identify main components",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Look for existing documentation and rules files",
+    "status": "pending",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Identify common development commands",
+    "status": "pending",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Create CLAUDE.md file with findings",
+    "status": "pending",
+    "priority": "high",
+    "id": "6"
+  }
+]

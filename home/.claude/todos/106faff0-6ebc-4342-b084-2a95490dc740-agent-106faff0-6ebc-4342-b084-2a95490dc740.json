@@ -1,0 +1,68 @@
+[
+  {
+    "content": "Parse the plan and identify all milestones",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create milestone_01.md file",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create milestone_02.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Create milestone_03.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Create milestone_04.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Create milestone_05.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Create milestone_06.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Create milestone_07.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "8"
+  },
+  {
+    "content": "Create milestone_08.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "9"
+  },
+  {
+    "content": "Create milestone_09.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "10"
+  },
+  {
+    "content": "Create milestone_10.md file",
+    "status": "pending",
+    "priority": "high",
+    "id": "11"
+  }
+]

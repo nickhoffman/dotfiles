@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Add SimpleCov gem to Gemfile test group",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Run bundle install to install SimpleCov",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Configure SimpleCov in spec/rails_helper.rb",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update .gitignore to exclude coverage directory",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Test SimpleCov setup by running test suite",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Commit all SimpleCov changes",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "content": "Install React Testing Library and Jest dependencies",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create Jest configuration file",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create setupTests.ts with Chrome API mocks",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update package.json with test scripts",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Write unit tests for Settings component",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Write unit tests for useSettings hook",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Write unit tests for useChromeStorage hook",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Run tests to verify they work",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  }
+]

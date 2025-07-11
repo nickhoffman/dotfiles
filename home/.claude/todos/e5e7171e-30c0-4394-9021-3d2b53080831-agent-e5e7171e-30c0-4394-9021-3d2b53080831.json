@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Install winston and @types/winston packages",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create winston configuration and getLogger utility",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Replace debug calls in src/hooks/useSettings.ts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "3"
+  },
+  {
+    "content": "Replace debug calls in src/background.ts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "4"
+  },
+  {
+    "content": "Clean up debug package and update documentation",
+    "status": "completed",
+    "priority": "low",
+    "id": "5"
+  },
+  {
+    "content": "Test logging in both development and production builds",
+    "status": "in_progress",
+    "priority": "medium",
+    "id": "6"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "content": "Phase 1: Install testing dependencies (vitest, @testing-library, etc.)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Phase 1: Configure Vitest with vitest.config.ts",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Phase 1: Update package.json with test scripts",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Phase 1: Create test setup file and Chrome API mocks",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Phase 3: Test useChromeStorage hook",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Phase 3: Test useSettings hook",
+    "status": "completed",
+    "priority": "medium",
+    "id": "6"
+  },
+  {
+    "content": "Phase 2: Test App component",
+    "status": "completed",
+    "priority": "medium",
+    "id": "7"
+  },
+  {
+    "content": "Phase 2: Test Settings component with TestProviders wrapper",
+    "status": "pending",
+    "priority": "medium",
+    "id": "8"
+  },
+  {
+    "content": "Phase 4: Test background script",
+    "status": "pending",
+    "priority": "medium",
+    "id": "9"
+  },
+  {
+    "content": "Phase 5: Test theme and error types",
+    "status": "pending",
+    "priority": "low",
+    "id": "10"
+  },
+  {
+    "content": "Phase 6: Create integration tests",
+    "status": "pending",
+    "priority": "low",
+    "id": "11"
+  },
+  {
+    "content": "Phase 7: Configure coverage thresholds and verify test quality",
+    "status": "pending",
+    "priority": "low",
+    "id": "12"
+  }
+]

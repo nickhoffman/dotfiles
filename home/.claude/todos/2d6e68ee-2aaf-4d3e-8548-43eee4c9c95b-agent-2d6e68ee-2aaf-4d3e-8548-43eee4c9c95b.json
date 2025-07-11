@@ -1,0 +1,38 @@
+[
+  {
+    "content": "Rename Settings component to SettingsTab (files, component, tests, imports)",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Create DownloadsTab component using TDD",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Create Tabs infrastructure component using TDD",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Update App component to use tabs using TDD",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Integration testing and final validation",
+    "status": "completed",
+    "priority": "medium",
+    "id": "5"
+  },
+  {
+    "content": "Update CLAUDE.md documentation",
+    "status": "completed",
+    "priority": "low",
+    "id": "6"
+  }
+]

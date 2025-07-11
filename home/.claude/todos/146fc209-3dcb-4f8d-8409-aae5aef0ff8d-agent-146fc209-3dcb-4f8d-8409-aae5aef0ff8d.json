@@ -1,0 +1,56 @@
+[
+  {
+    "content": "Install winston and @types/winston packages",
+    "status": "completed",
+    "priority": "high",
+    "id": "install-winston"
+  },
+  {
+    "content": "Create winston logger configuration with console transport",
+    "status": "completed",
+    "priority": "high",
+    "id": "create-winston-config"
+  },
+  {
+    "content": "Create useLogger React hook that returns namespaced logger",
+    "status": "in_progress",
+    "priority": "high",
+    "id": "implement-uselogger-hook"
+  },
+  {
+    "content": "Create separate logger utility for background script",
+    "status": "pending",
+    "priority": "high",
+    "id": "create-background-logger"
+  },
+  {
+    "content": "Replace debug calls in src/hooks/useSettings.ts with winston",
+    "status": "pending",
+    "priority": "high",
+    "id": "migrate-usesettings"
+  },
+  {
+    "content": "Replace debug calls in src/background.ts with winston",
+    "status": "pending",
+    "priority": "high",
+    "id": "migrate-background"
+  },
+  {
+    "content": "Remove debug package and @types/debug from dependencies",
+    "status": "pending",
+    "priority": "medium",
+    "id": "remove-debug-package"
+  },
+  {
+    "content": "Update CLAUDE.md documentation to reflect winston usage",
+    "status": "pending",
+    "priority": "low",
+    "id": "update-docs"
+  },
+  {
+    "content": "Test logging works in both dev and production builds",
+    "status": "pending",
+    "priority": "medium",
+    "id": "test-logging"
+  }
+]

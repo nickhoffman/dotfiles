@@ -1,0 +1,74 @@
+[
+  {
+    "content": "Remove App.css and its import from App.tsx",
+    "status": "completed",
+    "priority": "high",
+    "id": "1"
+  },
+  {
+    "content": "Remove index.css if it exists",
+    "status": "completed",
+    "priority": "high",
+    "id": "2"
+  },
+  {
+    "content": "Convert Settings component to use Mantine form system",
+    "status": "completed",
+    "priority": "high",
+    "id": "3"
+  },
+  {
+    "content": "Replace all HTML form elements with Mantine components",
+    "status": "completed",
+    "priority": "high",
+    "id": "4"
+  },
+  {
+    "content": "Replace layout with Mantine layout components",
+    "status": "completed",
+    "priority": "high",
+    "id": "5"
+  },
+  {
+    "content": "Replace error handling with Mantine error components",
+    "status": "completed",
+    "priority": "high",
+    "id": "6"
+  },
+  {
+    "content": "Replace loading state with Mantine Loader component",
+    "status": "completed",
+    "priority": "high",
+    "id": "7"
+  },
+  {
+    "content": "Remove CSS modules file and import from Settings component",
+    "status": "completed",
+    "priority": "high",
+    "id": "8"
+  },
+  {
+    "content": "Verify Vite configuration doesn't have unnecessary CSS modules config",
+    "status": "completed",
+    "priority": "medium",
+    "id": "9"
+  },
+  {
+    "content": "Test all functionality works with Mantine components",
+    "status": "completed",
+    "priority": "high",
+    "id": "10"
+  },
+  {
+    "content": "Run build verification",
+    "status": "completed",
+    "priority": "high",
+    "id": "11"
+  },
+  {
+    "content": "Update CLAUDE.md documentation",
+    "status": "completed",
+    "priority": "low",
+    "id": "12"
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "content": "Fix App component tests in src/App.test.tsx",
+    "status": "completed",
+    "priority": "high",
+    "id": "app-tests-fixed"
+  },
+  {
+    "content": "Create Settings component tests in src/components/settings/Settings.test.tsx",
+    "status": "completed",
+    "priority": "high",
+    "id": "settings-tests"
+  },
+  {
+    "content": "Test background script in src/background.test.ts",
+    "status": "completed",
+    "priority": "medium",
+    "id": "background-tests"
+  },
+  {
+    "content": "Test theme configuration in src/theme/default.test.ts",
+    "status": "completed",
+    "priority": "low",
+    "id": "theme-tests"
+  },
+  {
+    "content": "Test error types in src/types/errors.test.ts",
+    "status": "completed",
+    "priority": "low",
+    "id": "error-types-tests"
+  },
+  {
+    "content": "Create Settings integration tests",
+    "status": "completed",
+    "priority": "medium",
+    "id": "integration-tests"
+  },
+  {
+    "content": "Configure coverage thresholds and verify test quality",
+    "status": "completed",
+    "priority": "low",
+    "id": "coverage-config"
+  }
+]
