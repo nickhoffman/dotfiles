@@ -123,15 +123,9 @@ unsetopt share_history
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [[ -d /opt/homebrew ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-else
-  eval "$(/usr/local/bin/brew shellenv)"
-fi
-
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-source "`brew --prefix`/opt/powerlevel10k/powerlevel10k.zsh-theme"
+source "$HOMEBREW_PREFIX/opt/powerlevel10k/powerlevel10k.zsh-theme"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -140,25 +134,10 @@ for file in ~/.shell_scripts/*.sh; do
   source "$file"
 done
 
-### Start Stripe config
-hostname | grep -q st-hoffman
-if [[ "x$?" = "x0" ]]; then
-	autoload -Uz compinit; compinit
-	autoload -Uz bashcompinit; bashcompinit
-	source ~/.bash_profile
-	source ~/.bashrc
-	eval "$(nodenv init -)"
-	compdef _git stripe-git=git # this line specifically will fix git autocompletion
-
-	# Uncomment the following line if you want to disable marking untracked files
-	# under VCS as dirty. This makes repository status check for large repositories
-	# much, much faster.
-	DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-  # https://confluence.corp.stripe.com/display/INFRAPLATFORM/Space+Commander+AWS+Environment+%28sc-env%29+Setup
-  source ~/stripe/space-commander/bin/sc-aliases
-fi
-### End Stripe config
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+DISABLE_UNTRACKED_FILES_DIRTY="true"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
