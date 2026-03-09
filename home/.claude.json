@@ -1,0 +1,356 @@
+{
+  "numStartups": 40,
+  "installMethod": "unknown",
+  "autoUpdates": true,
+  "tipsHistory": {
+    "agent-flag": 40,
+    "continue": 36,
+    "custom-agents": 38,
+    "custom-commands": 27,
+    "desktop-app": 32,
+    "double-esc-code-restore": 36,
+    "drag-and-drop-images": 36,
+    "enter-to-steer-in-relatime": 23,
+    "image-paste": 23,
+    "install-github-app": 35,
+    "install-slack-app": 35,
+    "memory-command": 31,
+    "mobile-app": 33,
+    "new-user-warmup": 8,
+    "paste-images-mac": 36,
+    "permissions": 35,
+    "plan-mode-for-complex-tasks": 37,
+    "prompt-queue": 8,
+    "rename-conversation": 26,
+    "shift-enter": 35,
+    "shift-enter-setup": 1,
+    "shift-tab": 37,
+    "status-line": 26,
+    "terminal-setup": 1,
+    "theme-command": 21,
+    "todo-list": 23,
+    "web-app": 33
+  },
+  "promptQueueUseCount": 163,
+  "cachedStatsigGates": {
+    "tengu_disable_bypass_permissions_mode": false,
+    "tengu_halloween": false,
+    "tengu_migrate_ignore_patterns": false,
+    "tengu_tool_pear": false
+  },
+  "cachedDynamicConfigs": {
+    "tengu-top-of-feed-tip": {
+      "color": "dim",
+      "tip": ""
+    }
+  },
+  "cachedChromeExtensionInstalled": false,
+  "clientDataCache": {
+    "data": null,
+    "timestamp": 1772657598554
+  },
+  "effortCalloutDismissed": true,
+  "firstStartTime": "2025-11-02T14:22:07.786Z",
+  "githubRepoPaths": {
+    "nickhoffman/dotfiles": [
+      "/Users/hoffman/src/dotfiles"
+    ]
+  },
+  "hasCompletedOnboarding": true,
+  "hasOpusPlanDefault": false,
+  "hasUsedBackslashReturn": true,
+  "iterm2BackupPath": "/Users/hoffman/Library/Preferences/com.googlecode.iterm2.plist.bak",
+  "iterm2SetupInProgress": false,
+  "lastOnboardingVersion": "2.0.30",
+  "lastReleaseNotesSeen": "2.1.44",
+  "mcpServers": {
+    "toolshed_extras": {
+      "args": [
+        "starter_pack.brb.code.compass.confluence.data_catalog.hubble.slack.web_search.incident_analysis"
+      ],
+      "command": "${TOOLSHED_STDIO_SHIM}",
+      "env": {},
+      "type": "stdio"
+    },
+    "toolshed_logscale": {
+      "args": [
+        "logscale.run_logscale_query"
+      ],
+      "command": "${TOOLSHED_STDIO_SHIM}",
+      "env": {},
+      "type": "stdio"
+    }
+  },
+  "model": "claude-opus-4-6",
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstallFailReason": "manually_blocked_in_stripe_wrapper",
+  "officialMarketplaceAutoInstalled": true,
+  "opusProMigrationComplete": true,
+  "permissions": {
+    "allow": [
+      "mcp__toolshed_extras__*"
+    ]
+  },
+  "projects": {
+    "/Users/hoffman": {
+      "allowedTools": [],
+      "disabledMcpjsonServers": [],
+      "enabledMcpjsonServers": [],
+      "exampleFiles": [],
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasTrustDialogAccepted": false,
+      "lastAPIDuration": 0,
+      "lastAPIDurationWithoutRetries": 0,
+      "lastCost": 0,
+      "lastDuration": 9236,
+      "lastFpsAverage": 5.79,
+      "lastFpsLow1Pct": 184.65,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastModelUsage": {},
+      "lastSessionId": "62ada9ba-d2df-4fd1-bc20-119c22205fcc",
+      "lastSessionMetrics": {
+        "frame_duration_ms_avg": 1.269771653846088,
+        "frame_duration_ms_count": 52,
+        "frame_duration_ms_max": 5.415665999999874,
+        "frame_duration_ms_min": 0.3797080000003916,
+        "frame_duration_ms_p50": 0.9027294999996229,
+        "frame_duration_ms_p95": 3.503281250000136,
+        "frame_duration_ms_p99": 5.1250088399999445
+      },
+      "lastToolDuration": 0,
+      "lastTotalCacheCreationInputTokens": 0,
+      "lastTotalCacheReadInputTokens": 0,
+      "lastTotalInputTokens": 0,
+      "lastTotalOutputTokens": 0,
+      "lastTotalWebSearchRequests": 0,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "projectOnboardingSeenCount": 1
+    },
+    "/Users/hoffman/src": {
+      "allowedTools": [],
+      "disabledMcpjsonServers": [],
+      "enabledMcpjsonServers": [],
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasTrustDialogAccepted": true,
+      "lastAPIDuration": 123505,
+      "lastAPIDurationWithoutRetries": 123483,
+      "lastCost": 2.3845503999999997,
+      "lastDuration": 42510069,
+      "lastFpsAverage": 0.47,
+      "lastFpsLow1Pct": 125.03,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "cacheCreationInputTokens": 35321,
+          "cacheReadInputTokens": 48919,
+          "costUSD": 0.08007315000000001,
+          "inputTokens": 19620,
+          "outputTokens": 2282,
+          "webSearchRequests": 0
+        },
+        "claude-opus-4-6[1m]": {
+          "cacheCreationInputTokens": 307869,
+          "cacheReadInputTokens": 585072,
+          "costUSD": 2.30447725,
+          "inputTokens": 1187,
+          "outputTokens": 3273,
+          "webSearchRequests": 0
+        }
+      },
+      "lastSessionId": "f7a1c07f-f4b0-46db-b7e1-8d26f7387dba",
+      "lastSessionMetrics": {
+        "frame_duration_ms_avg": 1.6551748122593195,
+        "frame_duration_ms_count": 3068,
+        "frame_duration_ms_max": 33.509791000000405,
+        "frame_duration_ms_min": 0.14458299987018108,
+        "frame_duration_ms_p50": 1.3555004999507219,
+        "frame_duration_ms_p95": 3.619676799997971,
+        "frame_duration_ms_p99": 7.7987869299880135,
+        "hook_duration_ms_avg": 5,
+        "hook_duration_ms_count": 10,
+        "hook_duration_ms_max": 18,
+        "hook_duration_ms_min": 0,
+        "hook_duration_ms_p50": 3.5,
+        "hook_duration_ms_p95": 13.94999999999999,
+        "hook_duration_ms_p99": 17.19,
+        "pre_tool_hook_duration_ms_avg": 3.5714285714285716,
+        "pre_tool_hook_duration_ms_count": 7,
+        "pre_tool_hook_duration_ms_max": 4,
+        "pre_tool_hook_duration_ms_min": 2,
+        "pre_tool_hook_duration_ms_p50": 4,
+        "pre_tool_hook_duration_ms_p95": 4,
+        "pre_tool_hook_duration_ms_p99": 4
+      },
+      "lastToolDuration": 32370,
+      "lastTotalCacheCreationInputTokens": 343190,
+      "lastTotalCacheReadInputTokens": 633991,
+      "lastTotalInputTokens": 20807,
+      "lastTotalOutputTokens": 5555,
+      "lastTotalWebSearchRequests": 0,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "projectOnboardingSeenCount": 0
+    },
+    "/Users/hoffman/src/agents_test": {
+      "allowedTools": [],
+      "disabledMcpjsonServers": [],
+      "enabledMcpjsonServers": [],
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasTrustDialogAccepted": true,
+      "lastAPIDuration": 11590570,
+      "lastAPIDurationWithoutRetries": 11544225,
+      "lastCost": 232.70682524999992,
+      "lastDuration": 345515071,
+      "lastLinesAdded": 4139,
+      "lastLinesRemoved": 46,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "inputTokens": 155849,
+          "outputTokens": 5010,
+          "cacheReadInputTokens": 0,
+          "cacheCreationInputTokens": 4328,
+          "webSearchRequests": 0,
+          "costUSD": 0.18630900000000003
+        },
+        "claude-opus-4-6": {
+          "inputTokens": 2149,
+          "outputTokens": 223165,
+          "cacheReadInputTokens": 46299813,
+          "cacheCreationInputTokens": 5321251,
+          "webSearchRequests": 0,
+          "costUSD": 61.99759525000005
+        },
+        "claude-opus-4-6[1m]": {
+          "inputTokens": 482085,
+          "outputTokens": 45111,
+          "cacheReadInputTokens": 87444599,
+          "cacheCreationInputTokens": 6306971,
+          "webSearchRequests": 0,
+          "costUSD": 170.52292100000003
+        }
+      },
+      "lastSessionId": "861befc9-89f2-4fdd-95be-e1089ca1a4c0",
+      "lastSessionMetrics": {
+        "frame_duration_ms_count": 86542,
+        "frame_duration_ms_min": 0.06787499994970858,
+        "frame_duration_ms_max": 808.7365840002894,
+        "frame_duration_ms_avg": 4.2857320365387,
+        "frame_duration_ms_p50": 3.3668959997594357,
+        "frame_duration_ms_p95": 10.186679349862967,
+        "frame_duration_ms_p99": 16.904237499968136
+      },
+      "lastToolDuration": 5507310,
+      "lastTotalCacheCreationInputTokens": 11632550,
+      "lastTotalCacheReadInputTokens": 133744412,
+      "lastTotalInputTokens": 640083,
+      "lastTotalOutputTokens": 273286,
+      "lastTotalWebSearchRequests": 0,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "projectOnboardingSeenCount": 1,
+      "lastFpsAverage": 0.86,
+      "lastFpsLow1Pct": 55.68
+    },
+    "/Users/hoffman/src/dotfiles": {
+      "allowedTools": [],
+      "disabledMcpjsonServers": [],
+      "enabledMcpjsonServers": [],
+      "exampleFiles": [
+        ".vimrc",
+        "git_aliases.bash",
+        "aliases.bash",
+        "linker.sh",
+        "asdf.sh"
+      ],
+      "exampleFilesGeneratedAt": 1762093329767,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "hasCompletedProjectOnboarding": true,
+      "hasTrustDialogAccepted": true,
+      "ignorePatterns": [],
+      "lastAPIDuration": 144688,
+      "lastAPIDurationWithoutRetries": 144647,
+      "lastCost": 1.4376620000000002,
+      "lastDuration": 782168,
+      "lastFpsAverage": 2.46,
+      "lastFpsLow1Pct": 167.89,
+      "lastLinesAdded": 0,
+      "lastLinesRemoved": 0,
+      "lastModelUsage": {
+        "claude-haiku-4-5-20251001": {
+          "cacheCreationInputTokens": 0,
+          "cacheReadInputTokens": 0,
+          "costUSD": 0.007923999999999999,
+          "inputTokens": 5404,
+          "outputTokens": 504,
+          "webSearchRequests": 0
+        },
+        "claude-opus-4-6[1m]": {
+          "cacheCreationInputTokens": 166528,
+          "cacheReadInputTokens": 547706,
+          "costUSD": 1.4297379999999997,
+          "inputTokens": 652,
+          "outputTokens": 4473,
+          "webSearchRequests": 0
+        }
+      },
+      "lastSessionId": "01560a16-147d-4918-9abb-f0deda64dda0",
+      "lastSessionMetrics": {
+        "frame_duration_ms_avg": 1.2093049735067534,
+        "frame_duration_ms_count": 1925,
+        "frame_duration_ms_max": 39.586917000007816,
+        "frame_duration_ms_min": 0.371458999987226,
+        "frame_duration_ms_p50": 0.8809164999984205,
+        "frame_duration_ms_p95": 3.950201800005743,
+        "frame_duration_ms_p99": 6.035925680008948,
+        "hook_duration_ms_avg": 4.8,
+        "hook_duration_ms_count": 5,
+        "hook_duration_ms_max": 7,
+        "hook_duration_ms_min": 3,
+        "hook_duration_ms_p50": 5,
+        "hook_duration_ms_p95": 6.8,
+        "hook_duration_ms_p99": 6.96,
+        "pre_tool_hook_duration_ms_avg": 5.8076923076923075,
+        "pre_tool_hook_duration_ms_count": 26,
+        "pre_tool_hook_duration_ms_max": 11,
+        "pre_tool_hook_duration_ms_min": 1,
+        "pre_tool_hook_duration_ms_p50": 5,
+        "pre_tool_hook_duration_ms_p95": 11,
+        "pre_tool_hook_duration_ms_p99": 11
+      },
+      "lastToolDuration": 143371,
+      "lastTotalCacheCreationInputTokens": 166528,
+      "lastTotalCacheReadInputTokens": 547706,
+      "lastTotalInputTokens": 6056,
+      "lastTotalOutputTokens": 4977,
+      "lastTotalWebSearchRequests": 0,
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "projectOnboardingSeenCount": 0
+    }
+  },
+  "shiftEnterKeyBindingInstalled": true,
+  "skillUsage": {
+    "detector-root-cause": {
+      "lastUsedAt": 1772553094635,
+      "usageCount": 2
+    },
+    "stripe-internal:share": {
+      "usageCount": 2,
+      "lastUsedAt": 1772657550875
+    },
+    "share": {
+      "usageCount": 1,
+      "lastUsedAt": 1772657592826
+    }
+  },
+  "sonnet1m45MigrationComplete": true,
+  "sonnet45MigrationComplete": true,
+  "userID": "73ee9bb9c50336eb38b4ae4a6d68e0f7870d4ad5543cfc04730951a09bf21e41"
+}
