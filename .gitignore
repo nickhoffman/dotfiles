@@ -1,6 +1,7 @@
 .DS_Store
 .swo
 .swp
+*.swp
 .netrwhist
 home/.config/gcloud/
 home/.config/stripe/
