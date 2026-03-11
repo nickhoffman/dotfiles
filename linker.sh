@@ -68,12 +68,14 @@ for file in home/.[^.]*; do
   elif [[ -d $target && ! -h $target ]]; then
     echo -e "\x1B[33m~/$base already exists as a directory. Skipping to avoid data loss.\x1B[39m"
   elif [[ -f $target && $(md5sum $path) == $(md5sum $target) ]]; then
-    echo -e "\x1B[32m~/$base exists and was identical to your dotfile.  Overriding with symlink.\x1B[39m"
+    echo -e "\x1B[32m~/$base exists and was identical to your dotfile.  Overriding with symlink.\x1B[39m "
     symlink $path $target
   elif [[ -a $target ]]; then
-    read -p "\x1B[33m~/$base exists and differs from your dotfile. Override?  [yn]\x1B[39m" -n 1
+    echo -ne "\x1B[33m~/$base exists and differs from your dotfile. Override?  [yn]\x1B[39m "
+    read -n 1
+    echo
 
-    if [[ $REPLY =~ [yY]* ]]; then
+    if [[ $REPLY =~ ^[yY]$ ]]; then
       symlink $path $target
     fi
   else
@@ -96,9 +98,11 @@ for file in bin/*; do
     echo -e "\x1B[32m~/$base exists and was identical to $usr_local_bin.  Overriding with symlink.\x1B[39m"
     symlink $path $target
   elif [[ -a $target ]]; then
-    read -p "\x1B[33m~/$base exists and differs from $usr_local_bin. Override?  [yn]\x1B[39m" -n 1
+    echo -ne "\x1B[33m~/$base exists and differs from $usr_local_bin. Override?  [yn]\x1B[39m"
+    read -n 1
+    echo
 
-    if [[ $REPLY =~ [yY]* ]]; then
+    if [[ $REPLY =~ ^[yY]$ ]]; then
       symlink $path $target
     fi
   else
