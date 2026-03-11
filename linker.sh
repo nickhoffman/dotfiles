@@ -42,15 +42,21 @@ echo '### Installing Homebrew packages'
 brew install `paste -s -d ' ' home/.homebrew_packages_to_install`
 echo
 
-echo '### Installing Ruby'
-asdf plugin add ruby
-asdf plugin-update ruby
-asdf install ruby latest
-asdf global ruby latest
+echo -ne "\x1B[33mInstall Ruby and Ruby gems? [yn]\x1B[39m "
+read -n 1
 echo
 
-echo '### Installing Ruby gems'
-gem install `paste -s -d ' ' home/.ruby_gems_to_install`
+if [[ $REPLY =~ ^[yY]$ ]]; then
+  echo '### Installing Ruby'
+  asdf plugin add ruby
+  asdf plugin-update ruby
+  asdf install ruby latest
+  asdf global ruby latest
+  echo
+
+  echo '### Installing Ruby gems'
+  gem install `paste -s -d ' ' home/.ruby_gems_to_install`
+fi
 echo
 
 # END: Install 3rd-party software.
