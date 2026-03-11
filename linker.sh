@@ -25,7 +25,7 @@ if [[ $? -ne 0 ]]; then
 fi
 
 if [[ ! -d ~/.oh-my-zsh ]]; then
-  echo 'ERROR: Install oh-my-zsh and re-run this.'
+  echo 'ERROR: oh-my-zsh must be installed. Get it from https://ohmyz.sh/'
   exit 1
 fi
 
