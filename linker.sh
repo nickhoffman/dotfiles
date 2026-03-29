@@ -71,6 +71,8 @@ for file in home/.[^.]*; do
 
   if [[ -h $target && ($(readlink $target) == $path)]]; then
     echo -e "\x1B[90m~/$base is symlinked to your dotfiles.\x1B[39m"
+  elif [[ -d $target && ! -h $target ]]; then
+    echo -e "\x1B[33m~/$base already exists as a directory. Skipping to avoid data loss.\x1B[39m"
   elif [[ -f $target && $(md5sum $path) == $(md5sum $target) ]]; then
     echo -e "\x1B[32m~/$base exists and was identical to your dotfile.  Overriding with symlink.\x1B[39m "
     symlink $path $target
