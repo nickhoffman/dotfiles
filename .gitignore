@@ -3,5 +3,10 @@
 .swp
 *.swp
 .netrwhist
+home/.claude/ide/
+home/.claude/projects/
+home/.claude/shell-snapshots/
+home/.claude/statsig/
+home/.claude/todos/
 home/.config/gcloud/
 home/.config/stripe/
