@@ -1,0 +1,35 @@
+# Theme/appearance
+theme = Cobalt2
+#theme = Night Owl
+#theme = TokyoNight
+cursor-style = block
+cursor-style-blink = false
+font-family = JetBrains Mono
+font-size = 16
+font-thicken = true
+font-thicken-strength = 1
+font-feature = -calt
+adjust-cell-height = 1
+window-padding-x = 10
+window-padding-y = 5
+
+# Window/tab
+confirm-close-surface = true
+macos-titlebar-style = tabs
+
+# Miscellaneous
+copy-on-select = clipboard
+clipboard-trim-trailing-spaces = true
+bell-features = system
+desktop-notifications = true
+scrollback-limit = 10000
+
+# Shell integration
+shell-integration = zsh
+shell-integration-features = no-cursor,sudo,title,ssh-env,ssh-terminfo,path
+
+# Keybindings
+# Alt+backspace deletes a word
+keybind = option+backspace=text:\x1b\x7f
+keybind = cmd+d=new_split:right
+keybind = cmd+shift+d=new_split:down
