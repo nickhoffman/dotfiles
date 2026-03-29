@@ -125,7 +125,7 @@ unsetopt share_history
 
 export HOMEBREW_NO_AUTO_UPDATE=1
 
-source "$HOMEBREW_PREFIX/opt/powerlevel10k/powerlevel10k.zsh-theme"
+source "$HOMEBREW_PREFIX/share/powerlevel10k/powerlevel10k.zsh-theme"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -148,3 +148,7 @@ alias tc='/usr/local/stripe/bin/test_cookbook'
 alias cz='/usr/local/stripe/bin/chef-zero'
 alias cookit='tc && cz'
 # STOP - Managed by chef cookbook stripe_cpe_bin
+
+if [[ -f ~/.stripe/shellinit/zshrc ]]; then
+  source ~/.stripe/shellinit/zshrc
+fi
