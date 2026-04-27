@@ -28,9 +28,9 @@ if [ "x$?" = "x0" ]; then
   __git_shortcut gs     status
   __git_shortcut gsns   show --name-status --reverse
   __git_shortcut ga     add
-  __git_shortcut gd     diff
-  __git_shortcut gdc    diff --cached
-  __git_shortcut gdh    diff HEAD^ HEAD
+  __git_shortcut gd     diff --ws-error-highlight=all
+  __git_shortcut gdc    diff --ws-error-highlight=all --cached
+  __git_shortcut gdh    diff --ws-error-highlight=all HEAD^ HEAD
   __git_shortcut gc     commit
   __git_shortcut gcm    commit -m
   __git_shortcut gca    commit --amend
@@ -58,7 +58,7 @@ alias gfop='gfo && git pull'
 function git_files_changed_in_branch {
   current_branch="$(git rev-parse --abbrev-ref HEAD)"
   common_ancestor="$(git merge-base ${current_branch} master)"
-  git diff --name-only $current_branch $common_ancestor
+  gd --name-only $current_branch $common_ancestor
 }
 
 function gcmput {
