@@ -1,9 +1,0 @@
-*~
-._*
-.DS_Store
-*.swp
-*.swo
-db/dumps/
-vendor/bundle/
-.bundle/cache/
-notes.txt
