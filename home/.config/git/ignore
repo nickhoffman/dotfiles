@@ -9,3 +9,5 @@ vendor/bundle/
 notes.txt
 NOTES.md
 **/.claude/settings.local.json
+
+**/.claude/.cc-writes/
