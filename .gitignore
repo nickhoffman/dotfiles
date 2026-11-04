@@ -2,4 +2,10 @@
 home/.bundle/cache/
 home/.config/gcloud/
 home/.config/stripe/
-misc/Alfred.alfredpreferences/remote/
+home/.claude/*
+!home/.claude/CLAUDE.md
+!home/.claude/settings.json
+!home/.claude/statusline-command.sh
+!home/.claude/commands/
+!home/.claude/skills/
+home/.claude/skills/synced/
