@@ -32,6 +32,6 @@ The only thing that matters: **Does this advance or halt productive thinking?** 
 
 ## Writing Ruby code
 
-- **Quotes:** Use single quotes for by default. Only use double quotes when string interpolation (#{}) or escape sequences are needed.
+- **Quotes:** Use single quotes by default. Only use double quotes when string interpolation (#{}) or escape sequences are needed.
 
 - **Gem Version Constraints:** When adding gems to a Gemfile, always specify version constraints using `~>` for non-major version upgrades, following the pattern of other gems in the project (e.g., `gem "simplecov", "~> 0.22", require: false`).
