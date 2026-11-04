@@ -299,23 +299,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/Slack.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -343,6 +326,23 @@
 			<string>D0D170CF-42DF-4377-8032-B69D1C04AE97</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>paths</key>
+				<array>
+					<string>/Applications/Slack.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>F51AFF16-38A4-4E7D-ABC7-7F31B762FE32</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -483,6 +483,23 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>paths</key>
+				<array>
+					<string>/System/Applications/Reminders.app</string>
+				</array>
+				<key>toggle</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.launchfiles</string>
+			<key>uid</key>
+			<string>CC7A1A8E-E9C8-4138-A22A-FD522A08326F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -510,23 +527,6 @@
 			<string>75E41DA7-10D9-4F0F-9D9C-C72BC19AA917</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/System/Applications/Reminders.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>CC7A1A8E-E9C8-4138-A22A-FD522A08326F</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -644,7 +644,7 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>st-hoffman2</string>
+						<string>st-hoffman3</string>
 						<key>outputlabel</key>
 						<string>Stripe</string>
 						<key>uid</key>
@@ -764,7 +764,7 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>st-hoffman2</string>
+						<string>st-hoffman3</string>
 						<key>outputlabel</key>
 						<string>Stripe</string>
 						<key>uid</key>
@@ -884,7 +884,7 @@
 						<key>matchmode</key>
 						<integer>0</integer>
 						<key>matchstring</key>
-						<string>st-hoffman2</string>
+						<string>st-hoffman3</string>
 						<key>outputlabel</key>
 						<string>Stripe</string>
 						<key>uid</key>
