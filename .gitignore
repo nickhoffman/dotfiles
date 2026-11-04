@@ -1,3 +1,5 @@
+env
+.env
 .netrwhist
 home/.bundle/cache/
 home/.config/gcloud/
