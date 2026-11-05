@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 operation="$1"
 
@@ -14,7 +14,7 @@ apps=(
 )
 
 library_prefs_dir="$HOME/Library/Preferences"
-stored_prefs_dir="${0:A:h}/misc/app_preferences"
+stored_prefs_dir="$(cd "$(dirname "$0")" && pwd)/misc/app_preferences"
 
 import_preferences() {
   for app in "${apps[@]}"; do
