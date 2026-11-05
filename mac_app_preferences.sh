@@ -42,7 +42,7 @@ export_preferences() {
 
     if [[ -f "$plist" ]]; then
       export_path="$stored_prefs_dir/$bundle_id.plist"
-      if defaults export "$bundle_id" "$export_path"; then
+      if defaults export "$bundle_id" "$export_path" && plutil -convert xml1 "$export_path"; then
         echo "Exported $name to $export_path"
       fi
     else
