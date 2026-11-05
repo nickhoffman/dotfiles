@@ -124,5 +124,15 @@ defaults write com.microsoft.VSCodeInsiders ApplePressAndHoldEnabled -bool false
 defaults write com.visualstudio.code.oss ApplePressAndHoldEnabled -bool false
 defaults write com.vscodium ApplePressAndHoldEnabled -bool false
 defaults write com.microsoft.VSCodeExploration ApplePressAndHoldEnabled -bool false
+echo
+
+echo -ne "\x1B[33mImport Mac app preferences? This overwrites their current preferences. [yn]\x1B[39m "
+read -n 1
+echo
+
+if [[ $REPLY =~ ^[yY]$ ]]; then
+  echo '### Importing Mac app preferences'
+  ./mac_app_preferences.sh import
+fi
 
 # END: Install personal stuff.
