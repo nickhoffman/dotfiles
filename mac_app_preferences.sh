@@ -1,6 +1,7 @@
 #!/bin/bash
 
 operation="$1"
+app_name="$2"
 
 apps=(
   "iTerm2:com.googlecode.iterm2"
@@ -49,6 +50,27 @@ export_preferences() {
     fi
   done
 }
+
+# Limit the operation to a single app when one is named.
+if [[ -n "$app_name" ]]; then
+  selected_apps=()
+  for app in "${apps[@]}"; do
+    if [[ "${app%%:*}" == "$app_name" ]]; then
+      selected_apps=("$app")
+    fi
+  done
+
+  if [[ ${#selected_apps[@]} -eq 0 ]]; then
+    echo "ERROR: Unknown app: $app_name"
+    echo "Valid apps:"
+    for app in "${apps[@]}"; do
+      echo "  ${app%%:*}"
+    done
+    exit 1
+  fi
+
+  apps=("${selected_apps[@]}")
+fi
 
 case "$operation" in
   import)
