@@ -8,7 +8,6 @@ apps=(
   "AltTab:com.lwouis.alt-tab-macos"
   "Alfred:com.runningwithcrayons.Alfred-Preferences"
   "MeetingBar:com.stripe.jil.meetingbar"
-  "Superwhisper:com.superduper.superwhisper"
   "Bartender:com.surteesstudios.Bartender"
   "CleanShot X:pl.maketheweb.cleanshotx"
 )
