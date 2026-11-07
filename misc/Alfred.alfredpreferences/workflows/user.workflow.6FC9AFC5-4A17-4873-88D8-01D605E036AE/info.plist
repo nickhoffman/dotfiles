@@ -27,7 +27,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>56FDA030-5BBF-447B-BE53-5506BDE35666</string>
+				<string>2936A557-1AFE-4D3F-AF93-7BB57A166C95</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -80,19 +80,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E371242B-C76B-486A-996D-26982C8D02A9</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>56FDA030-5BBF-447B-BE53-5506BDE35666</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>EA5FF585-F9D6-47BA-AAA8-EDF289017164</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -195,31 +182,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3C3FEADC-15BE-4CD9-828B-0ED9682FFED2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>EA5FF585-F9D6-47BA-AAA8-EDF289017164</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>2936A557-1AFE-4D3F-AF93-7BB57A166C95</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>4D415064-D4A1-477D-B4DE-9185900872AC</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>6C3276FA-498C-459D-B1E3-1253C82587D0</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -820,29 +782,6 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>printf '%s' "$(scutil --get ComputerName)"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>type</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>56FDA030-5BBF-447B-BE53-5506BDE35666</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -870,55 +809,6 @@
 			<string>19E74DEC-9409-4B9C-B608-4DB406FC816A</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>st-hoffman3</string>
-						<key>outputlabel</key>
-						<string>Stripe</string>
-						<key>uid</key>
-						<string>4D415064-D4A1-477D-B4DE-9185900872AC</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>EA5FF585-F9D6-47BA-AAA8-EDF289017164</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>paths</key>
-				<array>
-					<string>/Applications/iTerm.app</string>
-				</array>
-				<key>toggle</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.launchfiles</string>
-			<key>uid</key>
-			<string>6C3276FA-498C-459D-B1E3-1253C82587D0</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 	</array>
 	<key>readme</key>
@@ -995,13 +885,6 @@
 			<key>ypos</key>
 			<real>365</real>
 		</dict>
-		<key>56FDA030-5BBF-447B-BE53-5506BDE35666</key>
-		<dict>
-			<key>xpos</key>
-			<real>175</real>
-			<key>ypos</key>
-			<real>805</real>
-		</dict>
 		<key>5E8B9436-1EA9-456B-8F25-9A47043FFBB2</key>
 		<dict>
 			<key>xpos</key>
@@ -1015,13 +898,6 @@
 			<real>35</real>
 			<key>ypos</key>
 			<real>130</real>
-		</dict>
-		<key>6C3276FA-498C-459D-B1E3-1253C82587D0</key>
-		<dict>
-			<key>xpos</key>
-			<real>445</real>
-			<key>ypos</key>
-			<real>910</real>
 		</dict>
 		<key>75E41DA7-10D9-4F0F-9D9C-C72BC19AA917</key>
 		<dict>
@@ -1078,13 +954,6 @@
 			<real>310</real>
 			<key>ypos</key>
 			<real>385</real>
-		</dict>
-		<key>EA5FF585-F9D6-47BA-AAA8-EDF289017164</key>
-		<dict>
-			<key>xpos</key>
-			<real>310</real>
-			<key>ypos</key>
-			<real>825</real>
 		</dict>
 		<key>F34039D7-E154-4AF2-BCC0-4D79B951308B</key>
 		<dict>
